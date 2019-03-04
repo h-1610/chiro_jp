@@ -85,7 +85,7 @@ $(function(){
           <ul class="menu_nav">
             <li class="hover_none p-5">
               <a href="<?php echo esc_url(home_url('/')); ?>">
-                  <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/logo.png'; ?>" class="header__logo" alt="ロゴ">
+                  <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/logo.png'; ?>" class="header__logo" alt="アクティブエイジング カイロプラクティック">
               </a>
             </li>
 
@@ -96,7 +96,7 @@ $(function(){
 
             <li class="menu__multi t_c w-auto p-5">
               <a href="#" class="init-bottom">
-                <span class="disabled menu__li--exSpan">お悩み<span class="show-up-lg" style="margin-left:2px"> <i class="fas fa-angle-down" style="margin-left:2px"></i></span></span>
+                <span class="disabled menu__li--exSpan">お悩み<span class="show-up-lg"> <i class="fas fa-angle-down" style="margin-left:2px"></i></span></span>
               </a>
               <ul class="menu__second-level">
                 <li class="header_small">
@@ -164,15 +164,6 @@ $(function(){
                     </li>
                   </ul>
                 </li>
-                <!--
-                <li>
-                  <a href="#" class="init-right">姿勢の悩み</a>
-                  <ul class="menu__third-level">
-                    <li><a href="#">Grandchild Menu</a></li>
-                    <li><a href="#">Grandchild Menu</a></li>
-                  </ul>
-                </li>
-                -->
               </ul>
             </li>
 
@@ -349,15 +340,6 @@ $(function(){
                                     <span class="show-down-md"><i class="fas fa-angle-right"></i> </span>ピラティス（専門サイトへ）
                                 </a>
                             </li>
-                            <!--<li>
-                                <a href="<?php echo esc_url(home_url('/').'cbp'); ?>">
-                                    <span class="show-down-md"><i class="fas fa-angle-right"></i> </span>CBP®️姿勢矯正
-                                </a>
-                            </li>
-                            <li>
-                                <a href="<?php echo esc_url(home_url('/').'pilatis'); ?>"><span class="show-down-md"><i class="fas fa-angle-right"></i> </span>ピラティス
-                                </a>
-                            </li>-->
                         </ul>
                     </li>
                     <li class="menu__li--ex">
@@ -372,9 +354,6 @@ $(function(){
                             <li>
                                 <a href="<?php echo esc_url(home_url('/').'clinic-information#faq'); ?>"><span class="show-down-md"><i class="fas fa-angle-right"></i></span> FAQ</a>
                             </li>
-                            <!--<li>
-                                <a href="<?php echo esc_url(home_url('/')); ?>"><span class="show-down-md"><i class="fas fa-angle-right"></i></span> 患者さんの声</a>
-                            </li>-->
                             <li>
                                 <a href="<?php echo esc_url(home_url('/').'clinic-information#access'); ?>"><span class="show-down-md"><i class="fas fa-angle-right"></i></span> アクセス</a>
                             </li>
