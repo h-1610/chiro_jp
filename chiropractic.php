@@ -73,7 +73,7 @@ get_header(); ?>
         <h2 class="main__ttl">FLOW<span>初回の流れ</span></h2>
         <p class="main__txt　txt_l pc-center">皆さまそれぞれのお悩みを理解し、より良い改善をするため初診時に、問診や検査・分析をさせていただきます。</p>
         <div class="flow-img">
-            <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/flow.png'; ?>" alt="施術の流れ">
+            <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/flow.png'; ?>" alt="初回の流れ">
         </div>
     </div>
 </div>
@@ -84,33 +84,6 @@ get_header(); ?>
 <div class="home__area ">
         <div class="flex-container">
             <h2 class="main__ttl">PRICE<span>料金</span></h2>
-
-            <!--
-            <div class="flex-fluid lessonPrice__area--add">
-                <div class="col-sm-12 col-lg-6 lessonPrice__area--add--left">
-                    <h3 class="lessonPrice__ttl">■初回検査&amp;施術費</h3>
-                    <span class="lessonPrice__ttl--sub">※「まずは一度」という方におすすめ！</span>
-
-                    <div class="flex">
-                        <p class="lessonPrice__price lessonPrice__price_left c-gray">¥9,000</p>
-                        <p class="lessonPrice__price lessonPrice__price--discount">¥6,000</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-lg-6">
-                    <h3 class="lessonPrice__ttl">■施術費</h3>
-                    <span class="lessonPrice__ttl--sub">※2回目以降お越しになる方</span>
-
-                    <p class="lessonPrice__price">¥6,000</p>
-                    <div class="flex-fluid">
-                        <p class="col-md-6 lessonPrice__time">1回</p>
-                        <div class="col-md-6 lessonPrice__priceBox">
-                            <p class="lessonPrice__price">¥6,000</p>
-                            <p class="lessonPrice__price lessonPrice__price--discount">¥7,000</p>
-                        </div>
-                    </div>
-                </div>
-                -->
                 <div class="sp-none w-980">
                   <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/price.png" alt="">
                 </div>
@@ -124,9 +97,7 @@ get_header(); ?>
                 </a>
             </div>
         </div>
-
-
-    </div>
+</div>
 
 <!--****************************************************************************************************
 *   access
