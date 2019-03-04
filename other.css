@@ -1,0 +1,3899 @@
+@charset "UTF-8";
+
+/****************************************************************************************************
+*   main
+****************************************************************************************************/
+html {
+    overflow-x: visible !important;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    font-size: 16px;
+    font-family: normal 1.6rem/1.5 'Maru Folk Regular', '-apple-system', 'BlinkMacSystemFont', 'Helvetica Neue', 'HelveticaNeue', 'Segoe UI', '游ゴシック体', 'YuGothic', 'Yu Gothic M', '游ゴシック Medium', 'Yu Gothic Medium', sans-serif !important;
+    color: #333;
+    height: auto;
+    overflow-x: visible !important;
+}
+
+.w800 img{
+  max-width:800px;
+  margin:0 auto;
+}
+.w800_new img{
+  max-width:600px;
+  margin:0 auto;
+}
+span.rmark{
+  position:relative;
+  bottom:0.17em;
+}
+.m-top50{
+  margin-top:50px;
+}
+.flex-container {
+    max-width: 1000px;
+}
+.p-bottom35{
+  padding-bottom:35px;
+}
+.p-bottom0{
+  padding-bottom:0px!important;
+}
+.main__ttl {
+    font-size: 2.8rem;
+    font-weight: normal;
+    text-align: center;
+    color: #2C5FA3;
+    width: 100%;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.main__ttl::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #2C5FA3;
+    position: absolute;
+    bottom: 5px;
+    left: calc(50% - 25px);
+}
+
+.main__ttl > span {
+    font-size: 1.6rem;
+    line-height: 2;
+    width: 100%;
+    padding-bottom: 12px;
+    display: inline-block;
+}
+.font-bold{
+    font-weight:bold;
+}
+.main__txt {
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 2;
+    width: 100%;
+    margin-bottom: 12px;
+}
+@media (max-width:718px){
+  .main__txt{
+      marign-bottom:0px!important;
+  }
+}
+
+
+.more__btn {
+    border-radius:2px;
+    font-size: 1.4rem;
+    font-weight:bold;
+    color: white;
+    text-align:center;
+    width: auto;
+    padding: 8px 28px;
+    background-color: #6D9CD9;
+    display: inline-block;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    margin-bottom:1.3rem;
+}
+
+.more__btn:hover {
+    opacity:0.7;
+}
+
+.linkArea {
+    position: absolute;
+    top: -71px;
+}
+
+.sub-title{
+    width: 100%;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 500;
+    padding-top:4rem;
+    margin-top:4rem;
+}
+.sub-title_first{
+    width: 100%;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+@media (max-width:718px){
+  .sub-title_first{
+    padding-top:1rem;
+  }
+}
+
+.sub-title_new{
+    width: 100%;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+.pain_detail table th,
+.pain_detail table td,
+.pain_detail table tr,
+.pain_detail table thead,
+.pain_detail table tbody{
+  color:#333;
+  border:none;
+  padding-left:20px;
+}
+.pain_detail table{
+  box-shadow:0px 0px 3px #ddd;
+}
+.pain_detail table tr{
+  background-color:rgba(213, 223, 237, 0.4);
+}
+.pain_detail table tr.b-color{
+  background-color:rgb(213, 223, 237);
+}
+.pain_detail table thead tr th{
+  color:#6D9CD9!important;
+}
+.font-16{
+  font-size:16px!important;
+}
+.m-top20{
+  margin-top:20px;
+}
+
+.m-bottom0{
+  margin-bottom:0px!important;
+}
+.p-bottom0{
+  margin-bottom:0px!important;
+}
+.new-main img{
+    padding-top:57px;
+}
+@media(min-width:980px){
+  .w80{
+    width:800px;
+    margin:0 auto;
+  }
+
+  .txt-c_pc{
+    text-align:center!important;
+  }
+  .menu_nav > li:last-child{
+    position:relative;
+    bottom:10px;
+  }
+  .pc-center{
+    text-align:center!important;
+    margin:0 auto!important;
+  }
+  .font-small{
+    font-size:13px!important;
+  }
+}
+
+
+@media(max-width:780px){
+ .b-t{
+    width:90%;
+    margin:0 auto;
+    margin-top:4rem;
+}
+.box-space{
+  padding:0 20px;
+}
+.sp-m-bottom{
+  margin-bottom:30px;
+}
+.spm-top{
+  margin-top:20px;
+}
+.sp-line{
+  line-height:2;
+}
+.font-small{
+  font-size:11px!important;
+}
+.yohaku{
+  margin-right:15px!important;
+  margin-left:15px!important;
+}
+.sp-text-left{
+  text-align:left!important;
+}
+
+a.no-link{
+  pointer-events:none;
+  font-weight:bold;
+}
+.header_small{
+  background:#eee!important;
+}
+a.spfont-14{
+  font-size:14px!important;
+}
+.p-b-s{
+    padding-bottom:0.5em;
+}
+}
+.sub-title:after{
+    content:"";
+    background:#000;
+    width:18px;
+    height:2px;
+    display:inline-block;
+    vertical-align:middle;
+    margin-bottom:5px;
+    margin-left:10px;
+}
+.sub-title:before{
+    content:"";
+    background:#000;
+    width:18px;
+    height:2px;
+    display:inline-block;
+    vertical-align:middle;
+    margin-bottom:5px;
+    margin-right:10px;
+}
+.sub-title_first:after{
+    content:"";
+    background:#000;
+    width:18px;
+    height:2px;
+    display:inline-block;
+    vertical-align:middle;
+    margin-bottom:5px;
+    margin-left:10px;
+}
+.sub-title_first:before{
+    content:"";
+    background:#000;
+    width:18px;
+    height:2px;
+    display:inline-block;
+    vertical-align:middle;
+    margin-bottom:5px;
+    margin-right:10px;
+}
+.sub-title_new:after{
+    content:"";
+    background:#000;
+    width:18px;
+    height:2px;
+    display:inline-block;
+    vertical-align:middle;
+    margin-bottom:5px;
+    margin-left:10px;
+}
+.sub-title_new:before{
+    content:"";
+    background:#000;
+    width:18px;
+    height:2px;
+    display:inline-block;
+    vertical-align:middle;
+    margin-bottom:5px;
+    margin-right:10px;
+}
+
+
+@media (max-width: 959px) {
+    .linkArea {
+        top: -48px;
+    }
+
+}
+
+/****************************************************************************************************
+*   header
+****************************************************************************************************/
+.header {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.header__logo {
+    width: 140px;
+    height: auto;
+    margin-right: 24px;
+}
+
+@media (min-width:980px){
+  .header__logo{
+    position: relative;
+    bottom: 10px;
+  }
+  .header__en{
+    background:rgba(213, 223, 237, 0.3);
+  }
+  li.pc-en{
+    width:12%;
+    line-height:40px!important;
+    padding-top:5px;
+  }
+}
+
+@media (max-width: 1000px) {
+    .header__logo {
+        width: auto;
+        height: 44px;
+    }
+}
+
+.header__menu {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.menu__ul--main li {
+    text-align: center;
+    padding: 0 6px;
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.menu__ul--main li > a,
+.menu__ul--main > li > span {
+    color: #333;
+    margin: 0;
+    width: 100%;
+    padding: 12px;
+    display: inline-block;
+    position: relative;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.menu__ul--main li > a::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #2C5FA3;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transform-origin: center top;
+    transform-origin: center top;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+}
+
+.menu__ul--main li > a:hover::after {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.menu__ul--sub {
+    list-style: none;
+    position: absolute;
+    z-index: 9999;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(213, 223, 237);
+    opacity: 0;
+    top: 80%;
+    visibility: hidden;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.menu__ul--sub li {
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+}
+
+.menu__ul--sub li a {
+    font-size: 1.4rem;
+    text-align: left;
+    color: #333;
+    padding: 12px 5px;
+    border-top: 1px solid rgba(44, 95, 163, 0.36);
+    display: block;
+}
+
+.menu__ttl {
+    text-align: left;
+    padding: 0 6px;
+}
+
+.menu__ttl > span {
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+a.disabled {
+    pointer-events: none;
+}
+
+.menu__ttl > p {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+/*  -----------------------新規-----------------------  */
+nav{
+    padding:10px;
+}
+.menu_nav {
+    position: relative;
+    width: 100%;
+    padding:10px 0;
+    max-width: 1025px;
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-between;
+}
+.p-top35{
+  padding-top:35px;
+}
+
+.menu_nav > li {
+    float: left;
+    width: 14%; /* グローバルナビ4つの場合 */
+    height: 50px;
+    line-height: 50px;
+}
+.menu_nav > li.p-5{
+  margin:0 5px;
+}
+
+.menu_nav > li a {
+    display: block;
+    color: #000;
+    font-family: "Maru Folk Regular" !important;
+    font-size:15px;
+    border-radius:2%;
+}
+
+.menu_nav > li a:hover {
+    color: #999;
+}
+
+ul.menu__second-level {
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+ul.menu__third-level {
+    visibility: hidden;
+    opacity: 0;
+}
+
+ul.menu__fourth-level {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menu_nav > li:hover {
+    background: rgb(213, 223, 237);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.menu__second-level li {
+    border-top: 1px solid #2C5FA3;
+}
+
+.menu__third-level li {
+    border-top: 1px solid #2C5FA3;
+}
+
+.menu__second-level li a:hover {
+    background: rgb(213, 223, 237);
+}
+
+.menu__third-level li a:hover {
+    background: rgb(213, 223, 237);
+}
+
+/*menu_single*/
+.menu > li.menu__single {
+    position: relative;
+}
+
+li.menu__single ul.menu__second-level {
+    position: absolute;
+    top: 40px;
+    width: 20%;
+    background: rgb(213, 223, 237);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+li.menu__single:hover ul.menu__second-level {
+    top: 50px;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* floatクリア */
+.menu_nav:before,
+.menu_nav:after {
+    content: " ";
+    display: table;
+}
+
+.menu_nav:after {
+    clear: both;
+}
+
+.menu_nav {
+    *zoom: 1;
+}
+.menu_nav > li.menu__multi {
+    position: relative;
+}
+
+li.menu__multi ul.menu__second-level {
+    position: absolute;
+    top: 40px;
+    width: 290%;
+    background: rgb(213, 223, 237);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+li.menu__multi:hover ul.menu__second-level {
+    top: 50px;
+    visibility: visible;
+    opacity: 1;
+}
+
+li.menu__multi ul.menu__second-level li {
+    position: relative;
+}
+
+
+li.menu__multi ul.menu__second-level li ul.menu__third-level {
+    position: absolute;
+    top: -1px;
+    left: 100%;
+    width: 100%;
+    background: #eee;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+li.menu__multi ul.menu__second-level li ul.menu__third-level li a{
+    font-size:1.3rem;
+}
+
+li.menu__multi ul.menu__second-level li:hover ul.menu__third-level {
+    visibility: visible;
+    opacity: 1;
+}
+
+li.menu__multi ul.menu__second-level li ul.menu__third-level li {
+    position: relative;
+}
+
+li.menu__multi ul.menu__second-level li ul.menu__third-level li:hover {
+    background: rgb(213, 223, 237);
+}
+
+li.menu__multi ul.menu__second-level li ul.menu__third-level li ul.menu__fourth-level {
+    position: absolute;
+    top: -1px;
+    left: 100%;
+    width: 100%;
+    background: rgb(213, 223, 237);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+li.menu__multi ul.menu__second-level li ul.menu__third-level li:hover ul.menu__fourth-level {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*
+li.menu__none > a:after{
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #2C5FA3;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transform-origin: center top;
+    transform-origin: center top;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+}
+*/
+.w-9{
+    width:9%!important;
+}
+.w-15{
+    width:15%!important;
+}
+.ml-20{
+    margin-left:20px;
+}
+.ml-20 p a{
+    line-height:2;
+}
+.t_c a{
+    text-align:center;
+}
+.header_small a{
+    text-align:left;
+    font-size:1.5rem;
+    padding:0 1rem;
+}
+.hover_none:hover{
+    background:unset!important;
+    opacity:0.7;
+}
+/* //-------------新規----------------------*/
+
+@media (min-width: 1001px) {
+    .menu__li--ex:hover .menu__ul--sub {
+        top: 100%;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header__logoArea {
+        padding: 0;
+    }
+
+    .header__menu {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        position: fixed;
+        top: 48px;
+        left: 0;
+        background-color: rgb(213, 223, 237);
+        overflow: scroll;
+        display: none;
+        z-index: 80000;
+    }
+
+    .menu__ul--main {
+        text-align: left;
+        display: block;
+        z-index: 90000;
+        padding-bottom:100px;
+    }
+
+    .menu__ul--main li > a,
+    .menu__ul--main > li > span,
+    .menu__ul--main > li > p {
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 12px 18px;
+        border-bottom: 1px solid #2C5FA3;
+        display: inline-block;
+    }
+
+    .menu__ul--sub {
+        width: 100%;
+        background-color: #fff;
+        visibility: visible;
+        position: relative;
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+
+    .menu__ul--sub li a {
+        font-size: 1.6rem;
+        padding: 12px 48px;
+        border-top: none;
+    }
+}
+
+@media (max-width: 599px) {
+    .header__menu {
+        height: 100%;
+    }
+}
+
+.header__en {
+    background-color: rgba(213, 223, 237, 0.3);
+}
+
+.header__contact {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 3px;
+    background-color: rgba(213, 223, 237, 0.4);
+    text-align:center;
+    border-radius:2%;
+}
+
+.header__contact--tel {
+    font-size: 1.3rem;
+    vertical-align: middle;
+    margin: 0;
+    padding: 3px;
+    background-color: rgb(213, 223, 237);
+    text-align: center;
+    border-radius:2%;
+}
+
+.header__contact--tel > a {
+    color: #333;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+}
+
+.header__contact--tel > a:hover {
+    color: #333;
+}
+
+.header__tel {
+    vertical-align: middle;
+    width: auto;
+    margin: 0 2px 2px 0;
+    display: inline-block;
+}
+
+@media (max-width: 1000px) {
+    .header__hamburger {
+        display: block;
+    }
+}
+
+.hamburger {
+    color: transparent !important;
+    padding-bottom: 6px;
+    background: transparent;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    z-index: 99999;
+}
+
+/****************************************************************************************************
+*   home
+****************************************************************************************************/
+/* top
+--------------------------------------------------*/
+.homeTop__area {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+}
+.review_img_pc img{
+  padding:30px 115px 0px;
+  max-width:1000px;
+  margin:0 auto;
+}
+.ishi-wrap img{
+  padding:0 95px;
+}
+.review_p-top{
+  padding-top:70px;
+}
+.padding-box img{
+  padding:0px 20px;
+}
+.homeTop__area video{
+    width:100%;
+    height:100vh;
+}
+.top-txt{
+    z-index: 99;
+    font-size: 5rem;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 80%;
+    height: 16.2rem;
+    line-height: 2;
+}
+@media (max-width: 959px){
+    .top-txt{
+        font-size:2.5rem;
+    }
+}
+.homeTop__ttl img{
+    font-size: 4.5rem;
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    margin:auto;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.homeTop__ttl img {
+    width: 60vw;
+}
+
+.homeTop__figure--dotted {
+    width: inherit;
+    height: inherit;
+    background: transparent;
+    background-image: radial-gradient(rgb(186, 158, 103) 40%, transparent 0), radial-gradient(rgb(186, 158, 103) 40%, transparent 0);
+    background-position: 0 0, 7px 7px;
+    background-size: 3.5px 3.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height:100vh;
+}
+
+.home__area {
+    width: 100%;
+    padding: 35px 0 55px;
+    position: relative;
+}
+.home__area2{
+  width: 100%;
+  padding: 35px 0 0;
+  position: relative;
+}
+
+.home__area--bg {
+    background-color: rgba(10, 0, 255, 0.03);
+}
+.home__area--bg_new {
+    background-color: #DDDFEF;
+}
+
+@media (max-width: 959px) {
+    .homeTop__ttl {
+        font-size: 3.5rem;
+    }
+    .homeTop__area{
+        background: url(https://aapilates.jp/wp/wp-content/uploads/2018/11/top-1280x720.jpg) no-repeat center center;
+    }
+
+
+}
+
+@media (max-width: 599px) {
+    .homeTop__ttl {
+        font-size: 2.8rem;
+    }
+}
+
+/* news
+--------------------------------------------------*/
+.homeNews__ttl {
+    font-size: 2.2rem;
+    text-align: center;
+    width: 100%;
+    margin: 24px 0 0;
+}
+
+.homeNewsItem__ul {
+    width: 100%;
+    margin: 0 auto 9px;
+}
+
+.homeNewsItem__ul > li {
+    font-size: 1.5rem;
+    max-width: 960px;
+    margin: 3px 0;
+}
+
+.homeNewsItem__ul > li > a {
+    color: rgb(100, 100, 100);
+    padding: 8px 0;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+}
+
+.homeNewsItem__ul > li > a:hover {
+    color: rgb(199, 178, 131) !important;
+}
+
+.homeNewsItem__date {}
+
+.homeNewsItem__cat {
+    font-size: .8em;
+    text-align: center;
+    min-width: 8em;
+    margin: 0 12px 0 24px;
+    padding: .1em .5em;
+    background-color: #2C5FA3;
+    color:#fff;
+}
+
+.homeNewsItem__cat--customer {
+    background-color: rgb(230, 220, 199);
+}
+
+.homeNewsItem__cat--studio {
+    color: white;
+    background-color: rgb(128, 104, 43);
+}
+span.block{
+  display:block;
+}
+span.bold{
+  font-weight:bold;
+}
+.homeNewsItem__ttl {
+    font-size: 1.5rem;
+    font-weight: normal;
+    max-width: 100%;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 599px) {
+    .homeNewsItem__ul > li > a {
+        -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+    }
+
+    .homeNewsItem__cat {
+        margin: 0 12px;
+    }
+
+    .homeNewsItem__ttl {
+        width: 100%;
+        display: block;
+        margin-top: 6px;
+    }
+}
+
+/* about
+--------------------------------------------------*/
+.homeAbout__img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 36px;
+}
+
+.homeAbout__ttl {
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.8;
+    color: #2a3139;
+    margin-bottom: 36px;
+}
+@media(min-width: 1024px){
+.homeAbout__ttl{
+    margin-bottom: 18rem;
+    margin-top: 7rem;
+}
+
+}
+
+.home_txt_color .main_color {
+    color: rgb(128, 104, 43);
+}
+
+.main_color {
+    color: #815D1F;
+    ;
+}
+
+.homeAbout__txt {
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 1.8;
+    margin: 12px 0;
+}
+.homeAbout__txt_new {
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.8;
+    margin: 12px 0;
+}
+figure{
+  margin-inline-start:0px;
+  margin-inline-end:0px;
+  margin-block-start:0px;
+  margin-block-end:0px;
+  margin:0;
+}
+/* benefit
+--------------------------------------------------*/
+.benefit__figure {
+    width: 215px;
+    height: auto;
+    margin: 0px 10px 0;
+}
+.benefit__figure2{
+  width: 215px;
+  height: auto;
+  margin: 0px 20px 0;
+}
+@media(max-width:780px){
+    .benefit__figure{
+        margin:12px 12px 0;
+    }
+    .benefit__figure2{
+        margin:12px 12px 0;
+    }
+}
+.homeBenefit__img {
+    width: 100%;
+    max-width: 240px;
+}
+
+.parts-text{
+    text-align:center;
+}
+
+.img__hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+}
+
+.img__hover > img {
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+
+.img__hover:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* lesson
+--------------------------------------------------*/
+.homeLesson__box {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.homeLesson__box > a {
+    margin: 24px 0;
+}
+
+.homeLesson__img {
+    width: 100%;
+}
+@media (min-width:980px){
+  ul.menu-nav{
+    display: flex!important;
+    justify-content: space-between!important;
+  }
+}
+@media (max-width: 959px) {
+    .homeLesson__box {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .homeLesson__box > a {
+        margin: 6px;
+    }
+
+}
+
+/* staff
+--------------------------------------------------*/
+.homeStaff__img {
+    width: 100%;
+}
+
+@media (max-width: 959px) {
+    .homeStaff__img {
+        width: 70%;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}
+
+.homeStaff__name {
+    font-size: 1.4rem;
+    text-align: center;
+    color: #585858;
+    width: 100%;
+    margin-top: 6px;
+}
+.homeStaff__name_pro {
+    font-size: 1.8rem;
+    font-weight:bold;
+    text-align: center;
+    color: #585858;
+    width: 100%;
+    margin-top: 6px;
+}
+.pro-txt{
+    line-height:2;
+}
+.small-font_pro{
+    font-size:1.4rem;
+}
+/* review
+--------------------------------------------------*/
+
+.homeReview__img {
+    width: 100%;
+}
+
+.homeReview__NameArea {
+    width: 100%;
+}
+
+.homeReview__name {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #585858;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.homeReview__sub {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #585858;
+    width: 100%;
+}
+
+.voice-text-box {
+    position: relative;
+    padding-top:30px;
+}
+.voice-text-box p{
+    text-align:center;
+}
+
+@media(min-width: 580px){
+.voice-text-box{
+    padding-left:50px;
+    word-break:keep-all;
+}
+}
+
+
+.voice-text-box:before {
+    content: "";
+    background: url(https://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron_r.png);
+        background-size:100%;
+    display: block;
+    width: 34px;
+    height: 27px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.voice-text-box:after {
+    content: "";
+    background: url(https://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron.png);
+    background-size:100%;
+    display: block;
+    width: 34px;
+    height: 27px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.arm{
+    position: relative;
+}
+.arm img{
+    margin:0 auto;
+}
+.arm:before{
+    content: "";
+    background: url(https://aachiro.jp/wp/wp-content/uploads/2019/01/arm-left.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+    display: block;
+    width: 153px;
+    height: 350px;
+    position: absolute;
+    top:55px;
+    left: -30px;
+    z-index:-1;
+}
+.arm:after{
+    content: "";
+    background: url(https://aachiro.jp/wp/wp-content/uploads/2019/01/arm-right.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+    display: block;
+    width: 150px;
+    height: 350px;
+    position: absolute;
+    top:55px;
+    right: -50px;
+    z-index:-1;
+}
+@media(min-width:768px){
+.pt-up{
+    padding-top:12rem;
+    padding-right:2rem;
+}
+.m-bottom20_pc{
+  margin-bottom:20px;
+}
+.w700_pc img{
+  max-width:600px!important;
+}
+}
+@media(max-width: 580px){
+ .arm img{
+    width:20vw;
+ }
+ .arm:before{
+    width:120px;
+    height:280px;
+    top:55px;
+    left:-10px;
+ }
+ .arm:after{
+    width:100px;
+    height:280px;
+    right:-10px;
+    top:55px;
+ }
+
+}
+.table_youso{
+  display:table;
+  width:70%;
+}
+.approach-text{
+  display:table-cell;
+  vertical-align:middle;
+  height:195.7px;
+}
+span.menu-text-bikou {
+    display: block;
+    font-size: 12px;
+}
+
+.price-bg {
+    background: rgba(245, 238, 226, 0.4);
+}
+
+.contents {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.review-bg {
+    background: rgba(245, 238, 226, 0.4);
+}
+
+.schedule-text-box {
+    margin: 0 auto;
+}
+
+.schedule-text-box p {
+    text-align: center;
+}
+
+.menu-text-box p {
+    text-align: center;
+}
+
+.homeReview__txtArea {
+    width: auto;
+    padding: 32px 25px 18px 25px;
+    background-size: contain;
+}
+
+
+.homeReview__txt {
+    font-size: 1.4rem;
+    text-align: center;
+    width: 420px;
+}
+
+@media (min-width: 600px) and (max-width: 959px) {
+    .homeReview__txtArea {
+        margin: 24px 0;
+    }
+}
+
+@media (max-width: 599px) {
+    .homeReview__img {
+        width: 120px;
+    }
+
+    .homeReview__NameArea {
+        width: calc(100% - 120px);
+        padding-left: 6px;
+    }
+
+    .homeReview__name {
+        font-size: 1.6rem;
+        text-align: left;
+        margin: 0;
+    }
+
+    .homeReview__sub {
+        font-size: 1.6rem;
+        text-align: left;
+        margin: 0;
+    }
+
+    .homeReview__txtArea {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        background: none;
+        position: relative;
+    }
+
+    .homeReview__txtArea--inner {
+        width: auto;
+        margin: 0 auto;
+        padding: 24px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .homeReview__txtArea--inner::before,
+    .homeReview__txtArea--inner::after {
+        font-family: "Font Awesome 5 Free";
+        font-size: 1.8rem;
+        font-weight: 900;
+        color: #2C5FA3;
+        position: absolute;
+    }
+
+    .homeReview__txtArea--inner::before {
+        /*content: "\f10d";
+        top: 3px;
+        left: 6px;*/
+    }
+
+    .homeReview__txtArea--inner::after {
+        /*content: "\f10e";
+        right: 6px;
+        bottom: 3px;*/
+    }
+
+    .homeReview__txt {
+        font-size: 1.4rem;
+        margin: 12px 0;
+    }
+}
+
+
+/* faq
+--------------------------------------------------*/
+.homeFaq__item {
+    width: 100%;
+    max-width: 980px;
+    margin: 20px auto;
+    padding: 6px 24px;
+    background-color: rgba(10, 0, 255, 0.03);
+}
+
+.faq-btns{
+    width:75%;
+    margin:0 auto;
+}
+
+.faq__icon {
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 24px;
+    color: white;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    background-color: #2C5FA3;
+    border-radius: 50%;
+}
+
+.faq__icon--a {
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 24px;
+    color: #2C5FA3;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #2C5FA3;
+}
+
+.faq__txt {
+    line-height: 24px;
+    width: calc(100% - 36px);
+    margin: 0;
+}
+
+.faq__txt--q {
+    font-size: 1.5rem;
+    color:#2C5FA3;
+}
+
+.faq__txt--a {
+    font-size: 1.4rem;
+}
+.faq-content {
+  display: none;
+}
+
+.faq-content.selected {
+  display: block;
+}
+
+@media (max-width: 959px) {
+    .homeFaq__item {
+        padding: 6px 12px;
+    }
+}
+
+/* access
+--------------------------------------------------*/
+.embed-container {
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.homeAccess__ttl {
+    font-size: 1.6rem;
+    font-weight:bold;
+    color: #2C5FA3;
+    margin: 0;
+}
+
+.homeAccess__txt {
+    font-size: 1.4rem;
+    line-height:2;
+    margin: 24px 0 8px;
+}
+
+@media (max-width: 959px) {
+    .homeAccess__ttl {
+        margin-top: 24px;
+    }
+}
+
+/****************************************************************************************************
+*   footer
+****************************************************************************************************/
+@media (max-width: 599px) {
+    .footer {
+        padding-bottom: 50px;
+    }
+}
+
+.footer__copy {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0;
+    padding: 12px;
+    background-color: white;
+}
+
+.footer__return {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    background-color:#2C5FA3;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 999;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.footer__return > i {
+    font-size: 3rem;
+    line-height: 48px;
+}
+
+.footer__return:hover {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+    -webkit-box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+}
+
+.footer__return:active {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+@media (max-width: 599px) {
+    .footer__return {
+        position: fixed;
+        bottom: 60px;
+        right: 6px;
+    }
+}
+
+.footer__menu {
+    background-color: white;
+    border-top: 3px solid #2C5FA3;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height:56px;
+    z-index: 2;
+    overflow:hidden;
+}
+
+.footer__menu--txt {
+    text-align: center;
+    width: 33.333%;
+    margin: 0;
+    padding: 12px;
+}
+
+@media (max-width: 389px) {
+    .footer__menu--txt {
+        width: auto;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+    }
+}
+
+.footer__menu--txt > a {
+    color: #333;
+    font-weight:600;
+}
+
+.footer__menu--txt > a:hover {
+    color: #333;
+}
+
+.footer__tel {
+    width: auto;
+    height: 20px;
+    margin: 0 2px 2px 0;
+    display: inline-block;
+}
+
+/****************************************************************************************************
+*   news_all
+****************************************************************************************************/
+.newsAll__area {
+    margin-top: 120px;
+}
+
+.page-numbers {
+    font-size: 1.6rem;
+    margin: 3px;
+    padding: 12px;
+    background-color: rgb(226, 216, 191);
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+}
+
+.page-numbers:hover {
+    color: white;
+}
+
+.page-numbers.current {
+    background-color: rgb(199, 178, 131);
+}
+
+@media (max-width: 959px) {
+    .newsAll__area {
+        margin-top: 48px;
+    }
+}
+
+/****************************************************************************************************
+*   single
+****************************************************************************************************/
+
+.post__area {
+    margin-top: 120px;
+}
+
+@media (max-width: 959px) {
+    .post__area {
+        margin-top: 60px;
+    }
+}
+
+.post__ttl {
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.post__info {
+    margin: 6px 0 12px;
+}
+
+.post__tag {
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+.post__tag a {
+    color: #333;
+}
+
+.post__tag a:hover {
+    color: #333;
+}
+
+.post__tag > i {
+    margin-right: 2px;
+}
+
+.post__content {
+    width: 100%;
+    margin: 24px 0;
+}
+
+.post__btn--link > a {
+    width: auto;
+    margin: 0 12px 24px;
+    padding: 12px 24px;
+    background-color: rgb(128, 104, 43);
+    display: inline-block;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+}
+
+.post__btn--link > a {
+    color: white;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+}
+
+.post__btn--link > a:hover {
+    color: rgb(199, 178, 131) !important;
+}
+
+/* sidebar
+--------------------------------------------------*/
+.postSidebar__ttl {
+    font-size: 1.8rem;
+    font-weight: normal;
+    width: 100%;
+    margin: 0;
+    padding: 6px 12px;
+    background-color: rgb(199, 178, 131);
+}
+
+.postSidebar__ttl--tag {
+    margin-top: 24px;
+}
+
+@media (max-width: 959px) {
+    .postSidebar__ttl--categories {
+        margin-top: 24px;
+    }
+}
+
+.categories__ul {
+    width: 100%;
+    background-color: rgb(226, 216, 191);
+}
+
+.categories__ul > li {
+    font-size: 1.4rem;
+    width: 100%;
+    padding: 12px;
+    border-bottom: 1px solid rgb(199, 178, 131);
+    cursor: pointer;
+}
+
+.categories__ul > li:last-child {
+    border-bottom: none;
+}
+
+.categories__ul > li a {
+    color: #333;
+    width: 100%;
+}
+
+.categories__ul > li a:hover {
+    color: #333;
+}
+
+.tag__area {
+    font-size: 1.4rem;
+    padding: 12px;
+    background-color: rgb(226, 216, 191);
+}
+
+/****************************************************************************************************
+*   lesson
+****************************************************************************************************/
+/* top
+--------------------------------------------------*/
+.lesson-top-box,.lesson-top-box02,.lesson-top-box03,.lesson-top-box04,.lesson-top-box05{
+    padding-top:3rem;
+    position:relative;
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.lesson-top-box{
+    background-image: url('https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/pain_top.jpg');
+}
+.lesson-top-box02{
+    background-image: url('https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/pain_top02.jpg');
+}
+.lesson-top-box03{
+    background-image: url('https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/pain_top03.jpg');
+}
+.lesson-top-box04{
+    background-image: url('https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/expert-top02.jpg');
+}
+.lesson-top-box05{
+    background-image: url('https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/expert-top03.jpg');
+}
+
+
+.lesson-top-box p,.lesson-top-box02 p,.lesson-top-box03 p,.lesson-top-box04 p,.lesson-top-box05 p{
+    z-index: 99;
+    font-size: 4.5rem;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 80%;
+    height: 16.2rem;
+    line-height:2;
+}
+.lessonMain__btnArea,
+.osteoarthritis__btnArea {
+    margin: 0px auto;
+}
+.sp-flex{
+    display:flex;
+}
+.sns-box li img{
+    width:30px;
+    height:30px;
+}
+.sns-box li{
+    margin:0 15px;
+}
+.lessonMain__btn,.lessonMain__btn2,.lessonMain__btn3,.osteoarthritis__btn {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 3px 0;
+    padding: 12px 6px;
+    border: 1px solid #707070;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    cursor: pointer;
+}
+
+.lessonMain__btn:hover,
+.osteoarthritis__btn:hover {
+    background-color: #6D9CD9;
+    color:#fff;
+}
+.lessonMain__btn2:hover {
+    background-color: #6D9CD9;
+    color:#fff;
+}
+.lessonMain__btn3:hover {
+    background-color: #6D9CD9;
+    color:#fff;
+}
+
+.is-active-lessonMainBtn,.is-active-lessonMainBtn2,.is-active-lessonBtn3,.is-active-osteoarthritisBtn {
+    background-color: #6D9CD9;
+    color:#fff;
+    font-weight:bold;
+}
+
+.lessonMain__box,.lessonMain__box2,.lessonMain__box3,.osteoarthritis__box {
+    width: 100%;
+    display: none;
+}
+.justify-center{
+  justify-content:center!important;
+}
+.m2{
+  margin:3px 2px;
+}
+.neck-img,
+.nekoze-img{
+  max-width:600px;
+  margin:20px auto 0;
+}
+.flow-img{
+  margin-top:25px;
+  margin:25px auto 0;
+}
+.flow-img img{
+  max-width:800px;
+}
+.neck-box{
+  border:3px solid #2C5FA3;
+  padding:20px;
+  max-width:600px;
+  margin:20px auto;
+}
+ul.neck-list li{
+  text-align:left;
+  line-height:2;
+  color:#000;
+  font-weight:bold;
+}
+.action{
+  background-color:#6D9CD9!important;
+}
+.action a{
+  color:#fff!important;
+  font-weight:bold;
+}
+.is-active-lessonMainBox,
+.is-active-osteoarthritisBox {
+    display: block;
+    -webkit-animation: boxIn-animation .5s ease-in-out;
+    animation: boxIn-animation .5s ease-in-out;
+}
+.is-active-lessonMainBox2 {
+    display: block;
+    -webkit-animation: boxIn-animation .5s ease-in-out;
+    animation: boxIn-animation .5s ease-in-out;
+}
+.is-active-lessonMainBox3 {
+    display: block;
+    -webkit-animation: boxIn-animation .5s ease-in-out;
+    animation: boxIn-animation .5s ease-in-out;
+}
+@media (max-width: 959px) {
+
+    .lesson-top-box,.lesson-top-box02,.lesson-top-box03,.lesson-top-box04,.lesson-top-box05{
+        padding-top: unset;
+        background-position: top;
+        background-size: contain;
+        padding-bottom: unset;
+        height:unset;
+    }
+}
+@media (max-width: 414px) {
+    .lesson-top-box,.lesson-top-box02,.lesson-top-box03,.lesson-top-box04,.lesson-top-box05{
+        background-image:unset;
+        padding-top:unset;
+        background-position: top;
+        background-size: contain;
+        padding-bottom: unset;
+        height:unset;
+    }
+    .b-top-gray{
+      border-top:3px solid #D0D0D0;
+    }
+    .parts-text,
+    .font-new{
+      font-weight:bold;
+    }
+    .flow-img{
+      margin-top:0px;
+    }
+    .lesson-top-box p,.lesson-top-box02 p,.lesson-top-box03 p,.lesson-top-box04 p,.lesson-top-box05 p{
+        height:6.2rem;
+    }
+}
+@media (max-width: 1025px) {
+    .lesson-top-box,.lesson-top-box02,.lesson-top-box03,.lesson-top-box04,.lesson-top-box05{
+        height:unset;
+        background-image:unset;
+    }
+}
+
+@-webkit-keyframes boxIn-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes boxIn-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* description
+--------------------------------------------------*/
+.lessonDescription__ttl {
+    font-size: 1.9rem;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.6;
+    color: rgb(128, 104, 43);
+    width: 100%;
+    margin: 0;
+}
+
+.lessonDescription__txt {
+    font-size: 1.4rem;
+    text-align: center;
+    width: 100%;
+    margin: 12px 0;
+}
+
+@media (max-width: 599px) {
+    .lessonDescription__txt {
+        text-align: left;
+    }
+    .lesson-top-box,.lesson-top-box02,.lesson-top-box03,.lesson-top-box04,.lesson-top-box05{
+        padding-top: unset;
+    }
+    .lesson-top-box p,.lesson-top-box02 p,.lesson-top-box03 p,.lesson-top-box04 p,.lesson-top-box05 p{
+        font-size:1.5rem;
+
+    }
+}
+
+
+/* shedule
+--------------------------------------------------*/
+.lessonShedule__time {
+    font-size: 1.4rem;
+}
+
+.lessonSheduleGroup__area {
+    padding: 12px;
+    background-color: white;
+    border: 2px solid rgb(128, 104, 43);
+}
+
+.lessonSheduleGroup__area>.col-md-4 {
+    padding: 0 36px;
+
+}
+
+.lessonSheduleGroup__area--center {
+    border-right: 4px solid rgb(128, 104, 43);
+    border-left: 4px solid rgb(128, 104, 43);
+}
+
+@media (max-width: 959px) {
+    .lessonSheduleGroup__area {
+        padding: 0 12px;
+    }
+
+    .lessonSheduleGroup__area>.col-md-4 {
+        padding: 24px 0;
+    }
+
+    .lessonSheduleGroup__area--center {
+        border-top: 4px solid rgb(128, 104, 43);
+        border-right: none;
+        border-bottom: 4px solid rgb(128, 104, 43);
+        border-left: none;
+    }
+}
+
+.lessonSheduleGroup__ttl {
+    font-size: 2.2rem;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.7;
+    width: 100%;
+    margin: 0;
+    border-bottom: 2px solid rgb(128, 104, 43);
+}
+
+.lessonSheduleGroup__txt {
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 6px 0 0;
+
+}
+
+.lessonSheduleGroup__news {
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+    width: 100%;
+    margin: 12px 0 0;
+}
+
+@media (max-width: 599px) {
+    .lessonSheduleGroup__ttl {
+        font-size: 2rem;
+        line-height: 1.6;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .lessonSheduleGroup__news {
+        font-size: 1.4rem;
+        margin: 12px 0 0;
+        padding-bottom: 12px;
+    }
+
+}
+
+.lessonShedule__txt {
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+    margin: 6px 0;
+}
+
+.lessonShedule__txt--sub {
+    font-size: 1.4rem;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+/* price
+--------------------------------------------------*/
+/* lessonページ */
+.lessonPrice__area--add {
+    padding: 12px;
+    background-color: white;
+    border: 2px solid #2C5FA3;
+}
+
+/* その他のページ */
+.lessonPrice__area {
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+}
+
+.lessonPrice__area--add>.col-lg-6 {
+    padding: 0 36px;
+
+}
+
+.lessonPrice__area--add--left {
+    border-right: 4px solid #2C5FA3;
+}
+.lessonPrice__price_left{
+    text-decoration:line-through;
+}
+
+@media (max-width: 959px) {
+    .lessonPrice__area--add {
+        padding: 0 12px;
+    }
+
+    .lessonPrice__area--add>.col-lg-6 {
+        padding: 24px 0;
+
+    }
+
+    .lessonPrice__area--add--left {
+        border-right: none;
+        border-bottom: 4px solid #2C5FA3;
+    }
+}
+
+.lessonPrice__ttl {
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.p-top60{
+    padding-top:60px;
+}
+
+.lessonPrice__ttl--sub {
+    font-size: 1.4rem;
+    width: 100%;
+    min-height: 21px;
+    margin: 0;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #2C5FA3;
+    display: block;
+}
+
+@media (max-width: 599px){
+    .lessonPrice__ttl--sub {
+        font-size: 1.2rem;
+    }
+}
+
+
+.lessonPrice__time {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.lessonPrice__price {
+    font-size: 3.6rem;
+    text-align: center;
+    width: 100%;
+    margin: 6px 0;
+}
+
+.lessonPrice__price--discount {
+    color: red;
+}
+
+.lessonPrice__news {
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+    margin: 12px 0 0;
+}
+
+@media (max-width: 599px) {
+    .lessonPrice__ttl {
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+
+    .lessonPrice__price {
+        font-size: 3rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .lessonPrice__news {
+        font-size: 1.4rem;
+        margin: 12px 0 0;
+        padding-bottom: 12px;
+    }
+
+}
+
+table {
+    color: #436f69;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+    background-color: transparent !important;
+    border: none !important;
+    border-collapse: separate;
+    border-spacing: 2px;
+    table-layout: auto;
+}
+
+tbody {
+    background-color: transparent !important;
+    border-bottom: none !important;
+}
+
+td,
+th {
+    padding: 0.618em;
+    background-color: transparent !important;
+    border-top: none;
+    border-top: none !important;
+    border-right: none !important;
+    text-align: left;
+}
+
+.salon-s_menu2-coupon,
+.salon-menu2-table {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.salon-s_menu2-coupon,
+.salon-menu2-table td {
+    padding: 13px 4px;
+    border-bottom: 1px solid #ccc;
+}
+
+.salon-s_menu2-coupon,
+.salon-menu2-table,
+.salon-menu2-table-price {
+    text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+    .font-size-12px {
+        font-size: 12px;
+    }
+
+    .font-size-14px {
+        font-size: 14px;
+    }
+
+    .font-size-18px {
+        font-size: 18px;
+    }
+}
+
+/****************************************************************************************************
+*   studio_info
+****************************************************************************************************/
+/* staff
+--------------------------------------------------*/
+.siStaff__img {
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.siStaff__name {
+    font-size: 2.4rem;
+    color: #2C5FA3;
+    margin: 0;
+    padding: 12px;
+    padding-left:0px;
+}
+
+.siStaff__txt,
+.siStaff__txt--more {
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 6px 0;
+}
+
+.siStaff__moreBtn {
+    color:#fff;
+    margin: 0;
+    padding: 8px 36px;
+    background-color: #6D9CD9;
+    display: inline-block;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    cursor: pointer;
+}
+
+.siStaff__moreBtn:hover {
+    color: white;
+}
+
+.siStaff__txt--more {
+    display: none;
+}
+
+.siStaff__ul {
+    margin-top: 12px;
+}
+
+.siStaff__ul > li {
+    font-size: 1.4rem;
+    padding: 3px 0;
+}
+
+.siStaff__hr {
+    width: 75%;
+    height: 1px;
+    margin: 36px 0;
+    padding: 0;
+    background-color: #2C5FA3;
+    position: relative;
+    top: 0;
+    left: 25%;
+    display: block;
+}
+
+/* faq
+--------------------------------------------------*/
+.siFaq__btn {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 3px 0;
+    padding: 12px 6px;
+    border: 1px solid #707070;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    cursor: pointer;
+}
+
+.siFaq__btn:hover {
+    background-color: #6D9CD9;
+}
+
+.is-active-faqBtn {
+    background-color: #6D9CD9;
+}
+
+.siFaq__box {
+    width: 100%;
+    display: none;
+}
+
+.is-active-faqBox {
+    display: block;
+    -webkit-animation: boxIn-animation .5s ease-in-out;
+    animation: boxIn-animation .5s ease-in-out;
+}
+
+/*
+.siFaq__item {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.siFaq__qArea {
+    padding: 6px 0;
+    background-color: rgb(250, 249, 244);
+}
+
+.faq__icon--si {
+    margin: 0 12px 0 24px;
+}
+
+@media (max-width: 959px) {
+    .faq__icon--si {
+        margin: 0 12px;
+    }
+
+    .faq__txt--si {
+        padding-right: 12px;
+    }
+}
+*/
+
+
+/****************************************************************************************************
+*   ver2
+****************************************************************************************************/
+.pain_title{
+  font-size:2.8rem;
+  color:#2C5FA3;
+  font-weight:normal;
+  margin:0 auto;
+}
+.pain-midashi{
+  text-align:center;
+}
+.pain-midashi p{
+  margin:25px auto 0;
+  line-height:2;
+  font-size:1.6rem;
+}
+.first-box{
+  margin-top:0!important;
+}
+
+
+/****************************************************************************************************
+*   about
+****************************************************************************************************/
+/* about
+--------------------------------------------------*/
+.about_top{
+    position:relative;
+    background-image: url('https://aachiro.jp/wp/wp-content/uploads/about_top.jpg');
+    height: 80vh;
+    background-position-x: center;
+    background-position-y:7rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.lesson-top-box{
+    position:relative;
+    background-image: url('https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/pain_top.jpg');
+    height: 80vh;
+    background-position-x: center;
+    background-position-y:7rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about_top p,
+.lesson-top-box p,
+.lesson-top-box04 p,.lesson-top-box02 p,.lesson-top-box05,.pain_deskworker_top p,.pain_sports_top p,.pain_osteoarthritis_top p,
+.pain_neck_top1 p,
+.pain_neck_top2 p,
+.pain_neck_top3 p,
+.pain_neck_top4 p{
+    z-index: 99;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 23rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 80%;
+    height: 16.2rem;
+}
+.cbp_top p,
+.myofascial_release_top p{
+    z-index: 99;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 80%;
+    height: 16.2rem;
+}
+.chiro_top{
+    position:relative;
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.chiro_top{
+  background-image: url('https://aachiro.jp/wp/wp-content/uploads/chiro_top.jpg');
+}
+.chiro_top p{
+    z-index: 99;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 80%;
+    height: 16.2rem;
+}
+.pain_deskworker_top{
+  position:relative;
+  padding-top:62rem;
+  background-image:url('https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/pain_deskworker.jpg');
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pain_sports_top{
+  position:relative;
+  padding-top:62rem;
+  background-image:url('https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/pain_sports.jpg');
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pain_osteoarthritis_top{
+  position:relative;
+  padding-top:62rem;
+  background-image:url('https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/pain_osteoarthritis.jpg');
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pain_neck_top1{
+  position:relative;
+  padding-top:62rem;
+  background-image:url('https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/nekoze2.jpg');
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pain_neck_top2{
+  position:relative;
+  padding-top:62rem;
+  background-image:url('https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/stneck2.jpg');
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pain_neck_top3{
+  position:relative;
+  padding-top:62rem;
+  background-image:url('https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/sokuwan2.jpg');
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pain_neck_top4{
+  position:relative;
+  padding-top:62rem;
+  background-image:url('https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/stback2.jpg');
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cbp_top{
+    position:relative;
+    padding-top:62rem;
+    background-image: url('https://aachiro.jp/wp/wp-content/uploads/cbp_top.jpg');
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.myofascial_release_top{
+    position:relative;
+    padding-top:62rem;
+    background-image: url('https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/myofascial_release.jpg');
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.studio_top{
+    background-image:url('https://aachiro.jp/wp/wp-content/uploads/info_top.jpg');
+    padding-top:3rem;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.reha_top{
+    background-image: url('https://aapilates.jp/wp/wp-content/uploads/2018/12/riha-top.jpg');
+    padding-top:3rem;
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mata_top{
+    background-image: url('https://aapilates.jp/wp/wp-content/uploads/2018/12/matani-top.jpg');
+    padding-top:3rem;
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.dance_top{
+    background-image: url('https://aapilates.jp/wp/wp-content/uploads/2018/12/dance-top.jpg');
+    padding-top:3rem;
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.health_top{
+    background-image: url('https://aapilates.jp/wp/wp-content/uploads/2018/12/benefit_top.jpg');
+    padding-top:3rem;
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.beauty_top{
+    background-image: url('https://aapilates.jp/wp/wp-content/uploads/2018/12/beauty-top.jpg');
+    padding-top:3rem;
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.matanity_top{
+  background-image: url('https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/expert-top03.jpg');
+  padding-top:3rem;
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.herniated_disc_top{
+  background-image: url('https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/pain_top02.jpg');
+  padding-top:3rem;
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.spinal_canal_stenosis_top{
+  background-image: url('https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/expert-top02.jpg');
+  padding-top:3rem;
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 1367px){
+  .about_top,
+  .lesson-top-box,
+  .matanity_top,
+  .herniated_disc_top,
+  .spinal_canal_stenosis_top
+  .studio_top,
+  .chiro_top,
+  .pain_deskworker_top,
+  .pain_sports_top,
+  .pain_osteoarthritis_top,
+  .pain_neck_top1,
+  .pain_neck_top2,
+  .pain_neck_top3,
+  .pain_neck_top4,
+  .cbp_top,
+  .myofascial_release_top,
+  .reha_top,
+  .mata_top,
+  .dance_top,
+  .health_top,
+  .beauty_top{
+    background-attachment: fixed;
+  }
+}
+.top-large{
+    font-size:4.5rem;
+}
+.about_logobox {
+    margin: 0 auto;
+}
+
+.about_logobox img {
+    width: 185px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.about_logobox p {
+    text-align: center;
+}
+
+.about_logoflex {
+    margin: 0 auto 30px;
+}
+
+.about_logoflex img {
+    width: 100%;
+    height: auto;
+}
+.txt_l{
+    text-align:left!important;
+}
+.about__logo_flex {
+    padding: 0 20px;
+}
+
+.about__logo_flex img {
+    width: 400px;
+    padding: 10px 0;
+}
+
+.about__logo_flex p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+.myofascial_release_flex{
+  display:flex;
+  margin:30px 0;
+}
+.cbp-flex{
+  display:flex;
+  justify-content:space-between;
+}
+.top-cbp-flex{
+  display:flex;
+  justify-content:center;
+  width:1000px;
+}
+.approach-img{
+  width:30%;
+  padding:0 10px;
+}
+.approach-text{
+  padding:0 25px;
+  width:100%;
+}
+.approach-text h3{
+  font-size:2rem;
+}
+.approach-text p{
+  line-height:2;
+  font-size:1.6rem;
+}
+@media (max-width: 768px) {
+    .about_top,
+    .lesson-top-box,
+    .cbp_top,
+    .myofascial_release_top,
+    .lesson-top-box02,
+    .lesson-top-box04,
+    .lesson-top-box05 {
+        background-image:unset;
+        padding-top: unset;
+        background-position: top;
+        background-size: contain;
+        padding-bottom: unset;
+        height:unset;
+    }
+    .flow-img img{
+      max-width:100%;
+    }
+    .myofascial_release_flex{
+        display:block;
+        margin:10px 0;
+    }
+    .approach-img{
+      width:80%;
+      margin:0 auto;
+    }
+    .approach-text{
+      width:100%;
+      padding:10px;
+    }
+    .approach-text h3{
+      text-align:center;
+    }
+    .about_sp-none-top{
+        display:none;
+    }
+    .benefit_sp-none-top{
+        display:none;
+    }
+    #background{
+      background-image: url('https://aapilates.jp/wp/wp-content/uploads/2018/12/about_top-1-1-1.jpg');
+      background-repeat: no-repeat;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+    }
+    .about_top p,
+    .lesson-top-box p,
+    .lesson-top-box02 p,
+    .lesson-top-box04 p,
+    .lesson-top-box05 p,
+    .cbp_top p,
+    .myofascial_release_top p,
+    .pain_deskworker_top p,.pain_sports p,.pain_osteoarthritis_top p,
+    .pain_neck_top1 p,
+    .pain_neck_top2 p,
+    .pain_neck_top3 p,
+    .pain_neck_top4 p{
+        font-size:1.5rem;
+        height:1.2rem;
+    }
+    .chiro_top p{
+        font-size:1.5rem;
+        height:1.2rem;
+    }
+    .top-large{
+        font-size:2.5rem;
+    }
+    .about_logobox img {
+        width: 155px;
+    }
+
+    .about__logo_flex {
+        padding: 0 12px;
+    }
+
+    .about__logo_flex p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+.about_top p,
+.lesson-top-box p,
+.lesson-top-box02 p,
+.lesson-top-box04 p,
+.lesson-top-box05 p,
+.pain_deskworker_top p,.pain_sports_top p,.pain_osteoarthritis_top p,
+.pain_neck_top1 p,
+.pain_neck_top2 p,
+.pain_neck_top3 p,
+.pain_neck_top4 p{
+        top:5rem;
+    }
+    .about_top img,
+    .lesson-top-box img,
+    .pain_deskworker_top img,.pain_sports_top img,.pain_osteoarthritis_top img,
+    .pain_neck_top1 img,
+    .pain_neck_top2 img,
+    .pain_neck_top3 img,
+    .pain_neck_top4 img{
+        padding-top:5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about_top,
+    .lesson-top-box,
+    .lesson-top-box02,
+    .lesson-top-box04,
+    .lesson-top-box05,
+    .cbp_top,
+    .myofascial_release_top,
+    .pain_deskworker_top,.pain_sports_top,.pain_osteoarthritis_top,
+    .pain_neck_top1,
+    .pain_neck_top2,
+    .pain_neck_top3,
+    .pain_neck_top4{
+        background-image:unset;
+        padding-top: unset;
+        background-position: top;
+        background-size: contain;
+        padding-bottom: unset;
+        height:unset;
+    }
+    .about_top p,
+    .lesson-top-box p,
+    .lesson-top-box02 p,
+    .lesson-top-box04 p,
+    .lesson-top-box05 p,
+    .cbp_top p,
+    .myofascial_release_top p,
+    .pain_deskworker_top p,.pain_sports_top p,.pain_osteoarthritis_top,.pain_neck_top{
+        height:3.2rem;
+    }
+    .chiro_top{
+        background-image:unset;
+        padding-top: unset;
+        background-position: top;
+        background-size: contain;
+        padding-bottom: unset;
+        height:unset;
+    }
+    .chiro_top p{
+        height:6.2rem;
+    }
+    .top-cbp-flex{
+      display:block!important;
+      width:50%;
+      margin:0 auto;
+    }
+    .max100,
+    .homeBenefit__img{
+      max-width:600px!important;
+    }
+    .w45{
+      width:45%!important;
+    }
+}
+
+/* strength
+--------------------------------------------------*/
+.strength_txt {
+    margin: 0 auto;
+}
+.strength_txtbox{
+    border:3px solid #2C5FA3;
+    margin:3rem 0;
+    background:#fff;
+    line-height:2;
+}
+.strength_txtbox h3{
+    font-size:1.8rem;
+    font-weight:bold;
+    padding:2rem 1rem 0;
+}
+.strength_txtbox p{
+    padding:0 1rem 0;
+}
+.border_b{
+    width:40%;
+    height:2px;
+    background:#2C5FA3;
+    margin:1rem 0;
+}
+@media (max-width: 414px) {
+    .border_b{
+        width:90%;
+    }
+}
+
+
+/****************************************************************************************************
+*   benefit
+****************************************************************************************************/
+/* benefit-top
+--------------------------------------------------*/
+.benefit_top{
+    position:relative;
+}
+
+.benefit_top p{
+    z-index: 99;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 80%;
+    height: 16.2rem;
+    line-height:2;
+}
+.benefit_flextxt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+.txt1 p{
+    height:7.2rem;
+}
+
+
+@media (max-width: 959px) {
+
+    .benefit_top p{
+        font-size:1.8rem;
+        height:1.2rem;
+    }
+    .benefit_top{
+
+    }
+    .reha_top{
+        padding-top: 27.5rem;
+        background-position: top;
+        background-size: contain;
+        padding-bottom: 8rem;
+        height:37vh;
+    }
+    .mata_top{
+        padding-top: 27.5rem;
+        background-position: top;
+        background-size: contain;
+        padding-bottom: 8rem;
+        height:37vh;
+    }
+    .dance_top{
+
+    }
+    .health_top{
+        padding-top: 27.5rem;
+        background-position: top;
+        background-size: contain;
+        padding-bottom: 8rem;
+        height:37vh;
+    }
+    .beauty_top{
+        padding-top: 27.5rem;
+        background-position: top;
+        background-size: contain;
+        padding-bottom: 8rem;
+        height:37vh;
+    }
+
+    .benefit_flextxt {
+        display: block;
+        text-align: center;
+    }
+
+    .benefit_normal_txt {
+        display: block;
+        font-weight: normal;
+        font-size: 16px;
+    }
+    .txt1 p{
+        height:0rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .pc-none-tab{
+        display:none;
+    }
+}
+@media (max-width: 414px) {
+    .sp-none-top{
+        display:none;
+    }
+    .text-left-sp{
+      text-align:left;
+    }
+    .cbp-flex{
+      display:block;
+      justify-content:space-between;
+    }
+    .cbp-flex a{
+      display:inline-block;
+      width:49%;
+    }
+    .reha_top{
+        padding-top: 9.5rem;
+        background-position: top;
+        background-size: contain;
+        padding-bottom: 8rem;
+        height:30vh;
+    }
+    .mata_top{
+        padding-top: 9.5rem;
+        background-position: top;
+        background-size: contain;
+        padding-bottom: 8rem;
+        height:30vh;
+    }
+    .dance_top{
+
+    }
+    .health_top{
+        padding-top: 9.5rem;
+        background-position: top;
+        background-size: contain;
+        padding-bottom: 8rem;
+        height:30vh;
+    }
+    .beauty_top{
+        padding-top: 9.5rem;
+        background-position: top;
+        background-size: contain;
+        padding-bottom: 8rem;
+        height:30vh;
+    }
+    .benefit_top p{
+        height:9rem;
+    }
+}
+
+.benefit_flextxt {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.benefit_normal_txt {
+    display: block;
+    font-weight: normal;
+    font-size: 16px;
+}
+@media (min-width: 769px) {
+.pc-none{
+        display:none;
+    }
+    .m-bottom0_pc{
+      margin-bottom:0px!important;
+    }
+}
+/* benefit-menu
+--------------------------------------------------*/
+.benefit_menu_txt h2 {
+    color: #815D1F;
+    font-weight: normal;
+}
+
+.benefit_menu_txt {
+    padding-top: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sns-box{
+    width:100%;
+    text-align:center;
+    justify-content:center;
+}
+.sns-box_new{
+    padding:3rem 0 0;
+}
+.flex{
+    display:flex;
+}
+.sns-left iframe,
+.sns-right iframe{
+    margin:0 auto!important;
+}
+.sns-left,
+.sns-right{
+    width:100%;
+    text-align:center;
+}
+
+@media (max-width: 959px) {
+    .benefit_menu_txt h2 {
+        color: #815D1F;
+        font-weight: normal;
+        font-size: 22px;
+    }
+}
+
+/*下層共通css*/
+
+.center{
+  text-align:center;
+}
+
+.pc-on {
+    display: unset;
+}
+
+.p-add1 {
+    padding-left: 30px;
+}
+
+.p-add2 {
+    padding-left: 12px;
+}
+.new_t-l_word{
+    text-align:left;
+}
+.rotate_180{
+    transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.pc-block{
+  display:block;
+}
+.sp-block{
+  display:none;
+}
+
+
+@media (max-width: 414px) {
+    .sp-block {
+        display: block;
+    }
+
+    .pc-on {
+        display: none;
+    }
+    .font-14{
+      font-size:1.4rem;
+    }
+    .m-bottom{
+      margin-bottom:50px;
+    }
+}
+
+.matanity-title{
+    text-align:center;
+    display:block;
+    color: #815D1F;
+}
+
+
+/****************************************************************************************************
+*   contact
+****************************************************************************************************/
+.contact-top {
+    padding-top: 3rem;
+}
+
+.mw_wp_form {
+    width: 100%;
+    color: #333;
+}
+
+.mw_wp_form table.mailform-tbl {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.mw_wp_form table tr {
+    width: 100%;
+    border-bottom: 1px dotted #ccc;
+    padding: 30px 0;
+    font-weight: normal;
+}
+
+.mw_wp_form table tr:first-child {
+    border-top: 1px dotted #ccc;
+}
+
+.mw_wp_form table th {
+    padding: 20px 0;
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
+    width: 30%;
+    float: left;
+}
+
+.mw_wp_form table th .attention {
+    font-size: 80%;
+    margin-left: 10px;
+    color: red;
+    padding: 3px;
+}
+
+.mw_wp_form table td {
+    padding: 20px 0;
+    width: 70%;
+    float: left;
+}
+
+.mw_wp_form table td.w50 input, .mw_wp_form table td.w50 select {
+    width: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.mw_wp_form table td.w80 input, .mw_wp_form table td.w80 select {
+    width: 80%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.mw_wp_form table td.w80 textarea {
+    width: 80%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.mw_wp_form #submit-button input {
+    margin: 0 auto;
+    display: block;
+    padding: 0px 30px;
+    border: 1px solid #6D9CD9;
+    background: #6D9CD9;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 40px;
+    line-height:40px;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    font-size: 90%;
+}
+.view-box{
+    width:100%;
+    margin-bottom:40px;
+}
+
+@media (max-width: 599px) {
+    /* small devices */
+
+    .mw_wp_form table td.w50 input, .mw_wp_form table td.w50 select {
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .mw_wp_form table td.w80 input, .mw_wp_form table td.w80 select {
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .mw_wp_form table td.w80 textarea {
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .mw_wp_form #submit-button input {
+        margin: 0 auto;
+        display: block;
+        padding: 0px 30px;
+        border: 1px solid #6D9CD9;
+        background: #6D9CD9;
+        color: #fff;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 40px;
+        -webkit-appearance: none;
+        border-radius: 5px;
+        font-size: 90%;
+    }
+
+    /*new_css*/
+    .mwform-radio-field {
+        display: block;
+    }
+
+    .mwform-radio-field .mw_wp_form table td.w81 input, .mw_wp_form table td.w81 select {
+        position: relative;
+        top: 1.5rem;
+    }
+
+    .w81 .mwform-radio-field label .mwform-radio-field-text {
+        position: relative;
+        top: -1.5;
+    }
+
+    .w81 .mwform-radio-field label input {
+        height: 1rem;
+    }
+
+
+
+
+}
+/****************************************************************************************************
+*   sp-スマートフォン
+****************************************************************************************************/
+@media (max-width: 768px) {
+    .sp-none{
+        display:none;
+    }
+    .w95{
+      width:90%;
+      margin-right:auto;
+      margin-left:auto;
+    }
+    .fontf{
+      font-size:1.4rem!important;
+    }
+    .pc-none{
+        display:block;
+    }
+    .flex{
+        display:block;
+    }
+    .sns-box{
+        justify-content:center;
+    }
+    .sp-block{
+      display:block;
+    }
+    .pc-block{
+      display:none;
+    }
+
+}
+@media (max-width: 500px) {
+.homeReview__txt {
+        font-size: 1.1rem;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/****************************************************************************************************
+*   dropdown
+****************************************************************************************************/
+.btn-more {
+  cursor: pointer;
+  margin-top:20px;
+}
+
+.btn-more::before {
+  font-family: 'FontAwesome';
+  content: "\f078";
+  margin-right: 10px;
+}
+
+.btn-more.close::before {
+  font-family: 'FontAwesome';
+  content: "\f077";
+  margin-right: 10px;
+}
+
+.dropdown p{
+  font-size:1.4rem;
+}
+/****************************************************************************************************
+*   parallax
+****************************************************************************************************/
+.parallax-contents{
+    position: relative;
+    z-index: 1;
+    height:100%;
+    /*padding: 100px 20px;
+    text-align :center;*/
+}
+.about_top,
+.lesson-top-box,
+.lesson-top-box02,
+.lesson-top-box04,
+.lesson-top-box05,
+.cbp_top,
+.myofascial_release_top,
+.pain_deskworker_top,.pain_sports_top,.pain_osteoarthritis_top,
+.pain_neck_top 1,
+.pain_neck_top 2,
+.pain_neck_top 3,
+.pain_neck_top 4{
+  background-size:cover;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.chiro_top{
+  background-size:cover;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+
+/****************************************************************************************************
+*   カイロ新規CSS
+****************************************************************************************************/
+@media (max-width: 768px) {
+    .sp-none{
+        display:none;
+    }
+    .flex-fluid a{
+      display:inline-block;
+    }
+    .img__hover{
+      width:100%;
+    }
+    p.parts-text{
+      width:100%;
+      font-size:13px;
+      font-weight:bold;
+      height:44px;
+      line-height:1.6;
+    }
+    .height-auto_sp{
+      height:auto!important;
+    }
+    p.parts-text2{
+      width:100%;
+      font-size:13px;
+      font-weight:bold;
+      text-align:center;
+      line-height:1.6;
+    }
+    .benefit__figure{
+      height:auto;
+      margin:0 auto;
+      padding:0 5px;
+    }
+    .benefit__figure2{
+      height:auto;
+      margin:0 auto;
+      padding:0 5px;
+    }
+}
+@media (min-width: 980px) {
+    .pc-none{
+        display:none;
+    }
+    .w-auto{
+      width:auto!important;
+    }
+    .about_logobox img {
+        width: 185px;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+}
+.m-top10{
+  margin-top:10px!important;
+}
+.parts-text,
+.font-new{
+  font-weight:normal;
+  font-size:16px;
+  margin-top:5px;
+}
+
+/****************************************************************************************************
+*   NEW-TOP
+****************************************************************************************************/
+.main-view p{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+    font-size: 2.4rem;
+    text-align: center;
+}
+.main-bold{
+    font-size:3.5rem;
+}
+.font-b{
+    font-weight:bold;
+}
+
+@media (max-width: 599px) {
+    .main-view p{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+    font-size: 3.5vw;
+    text-align: center;
+    word-break: keep-all;
+}
+.main-bold{
+    font-size:4.5vw;
+}
+.font-b_sp{
+    font-weight:bold;
+}
+}
+@media (min-width: 1024px) {
+    .pc-up{
+        margin-top:-1rem;
+    }
+}
+
+@media (max-width: 1024px) {
+ .main-view p{
+    position: absolute;
+    top: 25%;
+    left: 37%;
+ }
+}
+
+.w-980{
+    width:980px;
+    margin:0 auto;
+}
+.center{
+    text-align:center;
+}
+.m-0{
+    margin:0 auto;
+}
+@media (max-width: 980px) {
+    .w-980{
+        width:100%;
+    }
+    .table_youso{
+      width:100%;
+    }
+    .approach-text{
+      height:auto;
+    }
+}
+
+.small-font{
+    font-size:1.1rem;
+}
+
+.p-t3{
+    padding-top:3rem;
+}
+.kanji{
+    font-weight:bold;
+    font-size:1.6rem;
+}
+.m-rl{
+    margin:0 3rem;
+}
+/*.b-koron:before{
+    content:'';
+    width:auto;
+    height:10vw;
+    background-image:url(https://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    display:block;
+}*/
+@media (min-width: 960px) {
+    .sp24-lg-3_new{
+            width: calc(25% - 10px);
+    }
+}
+.koron-img img{
+    margin:0 auto;
+    width:6vw;
+}
+.b-r{
+    border-right:2px solid #D0D0D0;
+}
+.pro-box{
+    width:40%;
+}
+.intro img{
+    width:50%;
+    margin:0 auto;
+}
+.flex-fluid_new{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    /*align-items: center;*/
+    -ms-flex-line-pack: center;
+    align-content: center;
+    width: 100%;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.pro-txt p{
+    font-size:1.5rem;
+}
+
+
+/****************************************************************************************************
+*   swiper関連
+****************************************************************************************************/
+.sp-staff-w{
+    width:100%;
+}
+
+
+/****************************************************************************************************
+*   お悩み-部位別のお悩み
+****************************************************************************************************/
+.pain_title{
+    padding:0rem 0 0;
+}
+.pain-main img {
+    width:60%;
+    max-width:680px;
+    margin:0 auto;
+}
+.m-bottom30{
+  margin-bottom:30px;
+}
+.sp-md-4_new{
+    width:calc(24.5% - 0px)
+}
+.sp-md-4_posture{
+    width:calc(24.5% - 0px)
+}
+.sp-md-4_expert{
+    width:calc(29.5% - 0px)
+}
+@media(max-width:780px){
+ .sp-md-4_new{
+    width:calc(43.5% - 0px)
+}
+.sp-md-4_posture{
+    width:calc(44.5% - 0px)
+}
+.sp-md-4_expert{
+    width:calc(44.5% - 0px)
+}
+.pain-main img{
+    width:80%;
+}
+}
+.pain_detail{
+    width:80%;
+    margin:0 auto;
+    padding-top:3rem;
+}
+.pain_detail table{
+    border: 1px solid #CBC7BF;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.pain_detail td{
+    padding:10px;
+    color:#000;
+}
+.pain_detail td{
+    border: 1px solid #CBC7BF;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    display: table-cell;
+    vertical-align: inherit;
+}
+.pain_detail tr{
+    border: 1px solid #CBC7BF;
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.pain_detail table{
+    color:#CBC7BF;
+ border: 1px solid #CBC7BF;
+}
+.sub_blue_ttl{
+    font-size: 2.8rem;
+    font-weight: normal;
+    text-align: center;
+    color: #2C5FA3;
+    width: 100%;
+    margin-bottom: 24px;
+    position: relative;
+}
+.sub_pain_box_txt{
+    padding:2rem 0;
+}
+.posture_box{
+    width:75%;
+    margin:0 auto;
+}
+.posture_box p{
+    font-size:2.4rem;
+    font-weight:bold;
+}
+.imvolve_txt{
+    margin:0 auto;
+    padding-top:2rem;
+}
+.expert_txt{
+    line-height:2.5;
+}
+@media(max-width:780px){
+ .posture_box p{
+    font-size:1.6rem;
+}
+.expert_txt{
+    line-height:2;
+    font-size:1.4rem;
+}
+}
+.lessonPrice__price_left{
+    position:relative;
+}
+.lessonPrice__price_left:after{
+    content:'';
+    background-image:url('https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/a-arrow.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width:30px;
+    height:30px;
+    margin-left:3rem;
+    display:inline-block;
+    vertical-align:middle;
+}
+@media(max-width:780px){
+ .lessonPrice__price_left:after{
+    content:'';
+    background-image:url('https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/v-arrow.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width:30px;
+    height:30px;
+    margin:0 auto;
+    display:block;
+    vertical-align:middle;
+}
+.flex-container{
+  width:90%!important;
+}
+}
+/****************************************************************************************************
+*   カイロプラクティック
+****************************************************************************************************/
+.chiro_txt{
+    padding-top:2rem;
+}
+.chiro_txt p{
+    font-size: 1.6rem;
+    line-height: 2;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.c-img img{
+    max-width:1025px;
+    width:80%;
+    margin:0 auto;
+    padding:0;
+}
+.w100{
+  width:100%;
+  margin-right:auto;
+  margin-left:auto;
+}
+@media(max-width:780px){
+    .c-img img{
+        width:90%;
+        margin:0 auto;
+    }
+    .w100{
+      width:100%!important;
+      margin-right:auto;
+      margin-left:auto;
+    }
+    .w100 img{
+      width:100%!important;
+      margin-right:auto;
+      margin-left:auto;
+    }
+}
+/****************************************************************************************************
+*   REVIEW
+****************************************************************************************************/
+.review_txt{
+    width:50%;
+    padding:6rem 3rem 0;
+}
+@media(max-width:780px){
+.review_txt{
+    width:80%;
+    padding:0;
+}
+}
+@media(max-width:450px){
+.review_txt{
+    width:100%;
+    padding:0;
+}
+}
+@media(min-width:980px){
+  .txt-c_pc{
+    text-align:center!important;
+  }
+}
+
+/****************************************************************************************************
+*   20190104修正
+****************************************************************************************************/
+/*top gnavi 矢印位置*/
+@media(min-width:781px){
+.ml{
+    margin-left:2px;
+}
+}
+.c-gray{
+    color:#D1D1D1;
+}
+.review_img_pc img{
+    margin:0 auto;
+    max-width:980px;
+}
