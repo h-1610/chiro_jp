@@ -96,7 +96,7 @@ $(function(){
 
             <li class="menu__multi t_c w-auto p-5">
               <a href="#" class="init-bottom">
-                <span class="disabled menu__li--exSpan">お悩み<span class="show-up-lg"> <i class="fas fa-angle-down" style="margin-left:2px"></i></span></span>
+                <span class="disabled menu__li--exSpan m-l-2">お悩み<span class="show-up-lg"> <i class="fas fa-angle-down" style="margin-left:2px"></i></span></span>
               </a>
               <ul class="menu__second-level">
                 <li class="header_small">
