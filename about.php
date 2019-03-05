@@ -56,7 +56,6 @@ get_header(); ?>
         <div class="strength_txt">
             <div class="strength_txtbox">
                 <h3>①専門性の高いチーム</h3>
-                <div class="border_b"></div>
                 <p>
                     日本では唯一の「米国公認カイロプラクティックドクター」と「米国公認医療ピラティス専門家」のチームです。<br>
                     二つのアプローチを組み合わせることで、早期改善・回復に導きます。
@@ -64,7 +63,6 @@ get_header(); ?>
             </div>
             <div class="strength_txtbox">
                 <h3>②実績と信頼</h3>
-                <div class="border_b"></div>
                 <p>
                     15年以上の経験、延べ5万人以上の方々をサポートさせていただいております。<br>
                     医師や看護師からも信頼と推薦をいただいております。
@@ -72,7 +70,6 @@ get_header(); ?>
             </div>
             <div class="strength_txtbox">
                 <h3>③科学に基づくヘルスケア</h3>
-                <div class="border_b"></div>
                 <p>
                     カイロプラクティックとピラティスは米国において、科学的に認められているヘルスケアです。<br>
                     私たちは米国公認ライセンスを取得し、知識と技術の研鑽に日々努めております。
@@ -87,38 +84,23 @@ get_header(); ?>
 ****************************************************************************************************-->
 <div class="home__area home__area--bg">
     <h2 class="main__ttl">REVIEW<span>皆さまの声</span></h2>
-    <div class="sp-none">
-        <div class="review_img_pc">
-          <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/review_saitosan.png" class="col-sm-12" alt="お客さまの声：さいとうさん">
-        </div>
-    </div>
-    <div class="pc-none">
-        <div class="review_img padding-box">
-          <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/review_saitosan_sp.png" class="col-sm-12" alt="お客さまの声：さいとうさん">
-        </div>
-    </div>
-<!--
+    
     <div class="flex-container">
-        <h2 class="main__ttl">REVIEW<span>皆さまの声</span></h2>
         <div class="flex-fluid justify-center item-start">
-            <div class="col-sm-12 sp-md-3 pt-up">
+            <div class="col-sm-12 sp-md-3_new pt-up">
                 <div class="flex-fluid">
-                    <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/review01.png'; ?>" class="homeReview__img" alt="img">
+                    <img src="<?php echo esc_url(home_url()).'/wp-content/uploads/review_saito_new.png'; ?>" class="homeReview__img" alt="">
                     <div class="homeReview__NameArea">
                         <p class="homeReview__name">会社員 さいとうさん</p>
                         <p class="homeReview__sub pc-up">慢性的な肩こり・腰痛で来院</p>
                     </div>
                 </div>
             </div>
-            <div class="review_txt">
-                <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/review_saito.png" class="col-sm-12" alt="お客さまの声：さいとうさん">
-            </div>
--->
-            <!--
+            
             <div class="homeReview__txtArea">
                 <div class="homeReview__txtArea--inner arm">
-                    <img src="http://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron_r.png">
-                    <p class="homeReview__txt">
+                    <img src="http://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron_r.png" class="koron_l">
+                    <p class="homeReview__txt clear-b">
                         学生時代から机に向かってものを作ることが好きで<br>
                         慢性的な肩こり持ちでした。
                     </p>
@@ -131,41 +113,26 @@ get_header(); ?>
                         姿勢と背骨についてこれからも引き続きメンテナンスを<br>
                         お願いしたいと考えています。
                     </p>
-                    <img src="http://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron.png">
+                    <img src="http://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron.png" class="koron_r">
                 </div>
             </div>
         </div>
-        -->
+        
 
-        <div class="sp-none review_p-top">
-            <div class="review_img_pc">
-              <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/review_makisan.png" class="col-sm-12" alt="お客さまの声：槇さん">
-            </div>
-        </div>
-        <div class="pc-none">
-            <div class="review_img padding-box">
-              <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/review_makisan_sp.png" class="col-sm-12" alt="お客さまの声：槇さん">
-            </div>
-        </div>
-<!--
         <div class="flex-fluid justify-center item-start">
-            <div class="col-sm-12 sp-md-3 pt-up">
+            <div class="col-sm-12 sp-md-3_new pt-up">
                 <div class="flex-fluid">
-                    <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/review02.png'; ?>" class="homeReview__img" alt="お客さまの声：槇さん">
+                    <img src="<?php echo esc_url(home_url()).'/wp-content/uploads/review_makisan_new.png'; ?>" class="homeReview__img" alt="お客さまの声：槇さん">
                     <div class="homeReview__NameArea">
                         <p class="homeReview__name">槇さんファミリー</p>
                         <p class="homeReview__sub pc-up">健康管理と産前産後ケア</p>
                     </div>
                 </div>
             </div>
-            <div class="review_txt">
-                <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/review_maki.png" class="col-sm-12" alt="img">
-            </div>
--->
-            <!--
+            
             <div class="homeReview__txtArea">
                 <div class="homeReview__txtArea--inner arm">
-                    <img src="http://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron_r.png">
+                    <img src="http://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron_r.png" class="koron_l">
                     <p class="homeReview__txt ">
                         先生とはかれこれ5年以上<br>
                         お付き合いをさせてもらってます。
@@ -181,36 +148,71 @@ get_header(); ?>
                         先生のお陰で姿勢と背骨のメンテの大切さを教わりました。<br>
                         ありがとうございます！！
                     </p>
-                    <img src="http://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron.png">
+                    <img src="http://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron.png" class="koron_r">
                 </div>
             </div>
-            -->
         </div>
     </div>
 </div>
 
 <div class="home__area">
-
     <div class="w-980">
-        <h2 class="sub-title_new center b-t">医師の推薦</h2>
+        <h2 class="sub-title_new center">医師の推薦</h2>
     </div>
 
-    <!--pc-staff-->
-    <div class="pc-none">
-    <div class="justify-center w-980 p-t3 padding-box">
-      <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/ishi_sp.png" alt="">
+    <div class="flex-fluid justify-center item-start doctor-box">
+        <div class="l-doctor">
+            <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/ishi_l.png" alt="" class="doctor-img">
+            <div class="l-doctor-name">
+                <p>竹谷内 克彰先生<br>(整形外科・医学博士)</p>
+            </div>
+            <img src="http://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron.png" class="koron_doctor">
+            <div class="l-doctor-txt">
+                <p class="homeReview__txt ">
+                    カイロプラクティックには、国際的には<br>
+                    世界保健機関(WHO)が認めるヘルスケアであり<br>
+                    一定の効果と安定性が証明されています。
+                </p>
+                <p class="homeReview__txt ">
+                    しかし、日本には法律がないため<br>
+                    誰でもカイロプラクティックの看板を掲げて<br>
+                    開業できてしまうという大きな問題があります。
+                </p>
+                <p class="homeReview__txt ">
+                    当方の先生方は、本場アメリカで<br>
+                    カイロプラクティックを修学した方々のため<br>
+                    医師の私も自信を持って推薦します。
+                </p>
+            </div>
+        </div>
+        <div class="v-border"></div>
+        <div class="r-doctor">
+            <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/ishi_r.png" alt="" class="doctor-img">
+            <div class="l-doctor-name">
+                <p>井田 和徳先生<br>(内科医・瑞宝中綬章受章医師)</p>
+            </div>
+            <img src="http://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron.png" class="koron_doctor">
+            <div class="l-doctor-txt">
+                <p class="homeReview__txt ">
+                    一昨年前の冬に頸椎症を患い<br>
+                    慶應大学病院の先生に見ていただいたところ<br>
+                    これ以上悪化するなら手術しかないと言われました。
+                </p>
+                <p class="homeReview__txt ">
+                    一向に良くならず困っていたのですが<br>
+                    カイロプラクティックを受け始めて<br>
+                    3ヶ月後にはほとんどしびれがなくなり<br>
+                    今では会った支障はありません。
+                </p>
+                <p class="homeReview__txt ">
+                    カイロプラクティックという医療が広く普及し<br>
+                    多くの方に享受されることが<br>
+                    今後の日本の医療にとっても<br>
+                    多大な貢献となることを確信しております。
+                </p>
+            </div>
+        </div>        
     </div>
-    </div><!-- //pc-staff -->
-
-    <!--sp-staff-->
-    <div class="sp-none">
-    <div class="w-980">
-    <div class="justify-center w-980 p-t3 ishi-wrap">
-        <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/ishi.png" alt="">
-    </div>
-    </div>
-    </div><!-- //pc-staff -->
-
 </div>
 
 <!--****************************************************************************************************
@@ -248,18 +250,6 @@ get_header(); ?>
         </a>
     </div>
 </div>
-
-<!--  ///--SNS--///
-<div class="white-back">
-    <aside class="sns-box_new">
-        <ul class="sns-box sp-flex">
-            <li><a href="https://www.facebook.com/activeageingpilates/" target="brank"><img src="https://aapilates.jp/wp/wp-content/uploads/2018/11/flogo_rgb_hex-brc-site-250.png" alt="facebookアイコン"></li></a>
-            <li><a href="https://www.instagram.com/activeageing_pilates/" target="brank"><img src="https://aapilates.jp/wp/wp-content/uploads/2018/11/app-icon2.png" alt="Instagramアイコン"></a></li>
-        </ul>
-    </aside>
-</div>
-///--SNS--///  -->
-
 </div>
 
 <?php get_footer(); ?>
