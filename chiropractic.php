@@ -6,20 +6,12 @@ get_header(); ?>
 <!--****************************************************************************************************
 *   about-top
 ****************************************************************************************************-->
-<div class="sp-none-top about_sp-none-top">
 <div class="chiro_top">
-    <!--<img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/about_top.jpg'; ?>" alt="img">-->
-    <p><span class="top-large">CHIROPRACTIC</span><br>
-    カイロプラクティック</p>
-</div>
-</div>
-
-<div class="pc-none">
-<div class="chiro_top">
-    <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/chiro_top.jpg'; ?>" alt="img">
-    <p><span class="top-large">CHIROPRACTIC</span><br>
-    カイロプラクティック</p>
-</div>
+    <div class="pc-none">
+       <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/chiro_top.jpg'; ?>" alt="img">
+        <h1><span class="top-large">CHIROPRACTIC</span><br>
+        カイロプラクティック</h1>
+    </div>
 </div>
 
 
@@ -33,12 +25,12 @@ get_header(); ?>
         <h2 class="main__ttl">ABOUT<span>カイロプラクティックとは</span></h2>
         <div class="sp-none">
           <div class="c-img">
-              <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/chiro.jpg" class="col-sm-12" alt="img">
+              <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/chiro.jpg" class="col-sm-12" alt="">
           </div>
         </div>
         <div class="pc-none">
           <div class="w100">
-              <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/chiro_sp.jpg" class="col-sm-12" alt="img">
+              <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/chiro_sp.jpg" class="col-sm-12" alt="">
           </div>
         </div>
         <div class="about_logobox">
@@ -47,19 +39,12 @@ get_header(); ?>
 <p class="main__txt txt_l m-bottom0">カイロプラクティックでは、この<span class="bold">背骨の機能障害を取りのぞき</span>、自然治癒力を最大限に発揮させることを目的として世の中に広まりました。</p>
             </div>
         </div>
-        <div class="sp-none">
-          <div class="c-img">
-              <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/chiro2.jpg" class="col-sm-12" alt="img">
-          </div>
-        </div>
-        <div class="pc-none">
-          <div class="w100">
-              <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/chiro2_sp.png" class="col-sm-12" alt="img">
-          </div>
+        <div class="c-img">
+            <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/chiro2.jpg" class="col-sm-12" alt="">
         </div>
         <div class="about_logobox w80"><br>
-                <p class="main__txt txt_l">カイロプラクティックは科学的根拠を積極的に取り入れ、<span class="bold">手技療法の中で唯一WHO(世界保健機構)に認められる国際的なヘルスケア</span>です。WHOは世界各国にカイロプラクティックの教育ガイドラインを発行しており、現在世界約100カ国に普及しています。</p>
-<p class="main__txt txt_l m-bottom0">腰痛・頭痛・むち打ち・肩こり・股関節や膝の痛みなど、<span class="bold">運動器疾患</span>にすぐれた効果を発揮します。そのほかにも、<span class="bold">自律神経失調や内臓の機能改善・ストレスの緩和</span>などにも有効であり、高齢者のケアや生活習慣病など、あらゆる健康問題への効果も注目されています。</p>
+            <p class="main__txt txt_l">カイロプラクティックは科学的根拠を積極的に取り入れ、<span class="bold">手技療法の中で唯一WHO(世界保健機構)に認められる国際的なヘルスケア</span>です。WHOは世界各国にカイロプラクティックの教育ガイドラインを発行しており、現在世界約100カ国に普及しています。</p>
+            <p class="main__txt txt_l m-bottom0">腰痛・頭痛・むち打ち・肩こり・股関節や膝の痛みなど、<span class="bold">運動器疾患</span>にすぐれた効果を発揮します。そのほかにも、<span class="bold">自律神経失調や内臓の機能改善・ストレスの緩和</span>などにも有効であり、高齢者のケアや生活習慣病など、あらゆる健康問題への効果も注目されています。</p>
         </div>
     </div>
 </div>
@@ -73,7 +58,7 @@ get_header(); ?>
         <h2 class="main__ttl">FLOW<span>初回の流れ</span></h2>
         <p class="main__txt　txt_l pc-center">皆さまそれぞれのお悩みを理解し、より良い改善をするため初診時に、問診や検査・分析をさせていただきます。</p>
         <div class="flow-img">
-            <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/flow.png'; ?>" alt="施術の流れ">
+            <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/flow.png'; ?>" alt="受付・コンサルテーション・レントゲン撮影・分析・姿勢矯正・ホームケア">
         </div>
     </div>
 </div>
@@ -84,33 +69,6 @@ get_header(); ?>
 <div class="home__area ">
         <div class="flex-container">
             <h2 class="main__ttl">PRICE<span>料金</span></h2>
-
-            <!--
-            <div class="flex-fluid lessonPrice__area--add">
-                <div class="col-sm-12 col-lg-6 lessonPrice__area--add--left">
-                    <h3 class="lessonPrice__ttl">■初回検査&amp;施術費</h3>
-                    <span class="lessonPrice__ttl--sub">※「まずは一度」という方におすすめ！</span>
-
-                    <div class="flex">
-                        <p class="lessonPrice__price lessonPrice__price_left c-gray">¥9,000</p>
-                        <p class="lessonPrice__price lessonPrice__price--discount">¥6,000</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-lg-6">
-                    <h3 class="lessonPrice__ttl">■施術費</h3>
-                    <span class="lessonPrice__ttl--sub">※2回目以降お越しになる方</span>
-
-                    <p class="lessonPrice__price">¥6,000</p>
-                    <div class="flex-fluid">
-                        <p class="col-md-6 lessonPrice__time">1回</p>
-                        <div class="col-md-6 lessonPrice__priceBox">
-                            <p class="lessonPrice__price">¥6,000</p>
-                            <p class="lessonPrice__price lessonPrice__price--discount">¥7,000</p>
-                        </div>
-                    </div>
-                </div>
-                -->
                 <div class="sp-none w-980">
                   <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/price.png" alt="">
                 </div>
@@ -124,8 +82,6 @@ get_header(); ?>
                 </a>
             </div>
         </div>
-
-
     </div>
 
 <!--****************************************************************************************************
@@ -163,18 +119,6 @@ get_header(); ?>
         </a>
     </div>
 </div>
-
-<!--  ///--SNS--///
-<div class="white-back">
-    <aside class="sns-box_new">
-        <ul class="sns-box sp-flex">
-            <li><a href="https://www.facebook.com/activeageingpilates/" target="brank"><img src="https://aapilates.jp/wp/wp-content/uploads/2018/11/flogo_rgb_hex-brc-site-250.png" alt="facebookアイコン"></li></a>
-            <li><a href="https://www.instagram.com/activeageing_pilates/" target="brank"><img src="https://aapilates.jp/wp/wp-content/uploads/2018/11/app-icon2.png" alt="Instagramアイコン"></a></li>
-        </ul>
-    </aside>
-</div>
-///--SNS--///  -->
-
 </div>
 
 <?php get_footer(); ?>
