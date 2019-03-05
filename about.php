@@ -6,19 +6,12 @@ get_header(); ?>
 <!--****************************************************************************************************
 *   about-top
 ****************************************************************************************************-->
-<div class="sp-none-top about_sp-none-top">
 <div class="about_top">
-    <!--<img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/about_top.jpg'; ?>" alt="img">-->
-    <p><span class="top-large">ABOUT</span><br>
-    私たちについて</p>
-</div>
-</div>
-
-<div class="pc-none tab-block">
-<div class="about_top">
-    <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/about_top.jpg'; ?>" alt="img">
-    <p><span class="top-large">ABOUT</span><br>
-    私たちについて</p>
+    <div class="pc-none">
+       <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/about_top.jpg'; ?>" alt="">
+    </div>    
+    <h1><span class="top-large">ABOUT</span><br>
+    私たちについて</h1>
 </div>
 </div>
 
