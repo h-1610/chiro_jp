@@ -26,7 +26,7 @@ get_header(); ?>
         <h2 class="main__ttl">ABOUT<span>私たちについて</span></h2>
 
         <div class="about_logobox">
-            <img src="<?php echo esc_url(home_url()).'/wp/wp-content/themes/corporate-pro/original/img/about_logo01.png'; ?>" alt="img">
+            <img src="<?php echo esc_url(home_url()).'/wp/wp-content/themes/corporate-pro/original/img/about_logo01.png'; ?>" alt="">
             <p class="main__txt">
                 アクティブエイジングとは、「生涯元気に活動するための健康づくり」のことです。<br>
                 薬や外科に頼らず、自然治癒力を最大限発揮できる心と身体づくりをサポートいたします。<br><br>
@@ -38,7 +38,7 @@ get_header(); ?>
         </div>
 
         <div class="about_logoflex m-bottom0 w800">
-            <img src="<?php echo esc_url(home_url()).'/wp/wp-content/themes/corporate-pro/original/img/about-main-image.png'; ?>" alt="img">
+            <img src="<?php echo esc_url(home_url()).'/wp/wp-content/themes/corporate-pro/original/img/about-main-image.png'; ?>" alt="">
         </div>
 
     </div>
