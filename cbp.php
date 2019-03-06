@@ -8,7 +8,7 @@ get_header(); ?>
 ****************************************************************************************************-->
 <div class="chiro_top">
     <div class="pc-none">
-        <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/cbp.jpg'; ?>" alt="img">
+        <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/cbp.jpg'; ?>" alt="">
         <h1><span class="top-large">CHIROPRACTIC BIOPHYSICS</span><br>
         CBP<span class="rmark">®︎</span>姿勢矯正</h1>
     </div>
