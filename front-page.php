@@ -4,124 +4,41 @@
 *   top
 ****************************************************************************************************-->
 
-<div class="main-view sp-none new-main">
-    <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/topPC.jpg" class="main-view" alt="メイン">
-    <!--<p><span class="main-bold">“患者さんの健康に責任を持つ”</span><br>私たちは日本でわずか0.01%の<br>米国公認カイロプラクティックドクターです</p>-->
+<div class="main-view">
+    <h1>
+    <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/topPC.jpg" class="main-view sp-none" alt="患者さんの健康に責任を持つ私たちは日本でわずか0.01%の米国公認カイロプラクティックドクターです">
+    <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/topSP.jpg" class="main-view pc-none" alt="患者さんの健康に責任を持つ私たちは日本でわずか0.01%の米国公認カイロプラクティックドクターです">
+    </h1>
 </div>
-<div class="main-view pc-none">
-    <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/topSP.jpg" class="main-view" alt="メイン">
-    <!--<p><span class="main-bold">“患者さんの健康に責任を持つ”</span><br>私たちは日本でわずか0.01%の<br>米国公認カイロプラクティックドクターです</p>-->
-</div>
-
-<!--****************************************************************************************************
-*   news
-****************************************************************************************************-->
-<!-- //// お知らせ
-<section class="flex-fluid">
-    <div class="flex-container justify-center">
-        <h2 class="homeNews__ttl">お知らせ</h2>
-        <ul class="homeNewsItem__ul">
-            <?php
-            $args = array(
-                'posts_per_page' => 4,
-            );
-            $news_posts = new WP_Query( $args );
-
-            if( $news_posts->have_posts() ):
-            while( $news_posts->have_posts() ): $news_posts->the_post();
-            $cat = get_the_category();
-            $catId = $cat[0]->cat_ID;
-            $catName = $cat[0]->name;
-            ?>
-            <li>
-                <a href="<?php the_permalink(); ?>" class="flex-fluid justify-start nowrap">
-                    <span class="homeNewsItem__date">
-                        <time datetime="<?php the_time( 'Y-m-d' ); ?>"><?php the_time( 'Y.m.d' ); ?></time>
-                    </span>
-
-                    <?php if($catName == "お客様の声") : ?>
-                        <span class="homeNewsItem__cat homeNewsItem__cat--customer">
-                            <?php echo $catName ?>
-                        </span>
-                    <?php elseif($catName == "スタジオ情報") : ?>
-                        <span class="homeNewsItem__cat homeNewsItem__cat--studio">
-                            <?php echo $catName ?>
-                        </span>
-                    <?php else : ?>
-                        <span class="homeNewsItem__cat">
-                            <?php echo $catName ?>
-                        </span>
-                    <?php endif; ?>
-
-
-                    <?php the_title('<h3 class="homeNewsItem__ttl">', '</h3>'); ?>
-                </a>
-            </li>
-            <?php endwhile; endif; ?>
-        </ul>
-
-        <div class="flex-fluid justify-center mb24">
-            <a href="<?php echo esc_url(home_url('/')."news/"); ?>" class="more__btn">
-                もっと見る
-            </a>
-        </div>
-    </div>
-</section>
-//////  お知らせ  -->
 
 <!--****************************************************************************************************
 *   about
 ****************************************************************************************************-->
-<div class="home__area home__area--bg sp-none">
+<div class="home__area home__area--bg">
+    <h2 class="main__ttl">ABOUT<span>私たちについて</span></h2>
     <div class="flex-container">
-        <h2 class="main__ttl">ABOUT<span>私たちについて</span></h2>
-
         <div class="col-sm-12 sp-lg-6">
-            <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/about01.jpg'; ?>" class="homeAbout__img" alt="img">
-            <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/about02.jpg'; ?>" class="homeAbout__img m-bottom0" alt="img">
+            <img src="<?php echo esc_url(home_url()).'/wp-content/uploads/about01.jpg'; ?>" class="homeAbout__img" alt="">
         </div>
         <div class="col-sm-12 sp-lg-6">
-            <h3 class="homeAbout__ttl">
-                アクティブエイジングとは<span class="block"></span>
-                「生涯元気に活動するための健康づくり」です。<span class="block"></span>
-                薬や外科に頼らず<span class="sp-block"></span>自然治癒力を最大限発揮できる<span class="block"></span>
-                心と身体づくりをサポートいたします。
-            </h3>
-            <p class="homeAbout__txt">
-                カイロプラクティックは<span class="block"></span>
-                WHOが認める国際的なヘルスケアです。<span class="block"></span>
-                私たちは臨床歴15年、延べ5万人以上の<span class="sp-block"></span>施術を行ってきました。<span class="block"></span>
-                高い志を持ち、皆様の健康のために<span class="block"></span>
-                最善を尽くす事をお約束します。
+            <p class="homeAbout__ttl">
+              アクティブエイジングとは<br>
+              「生涯元気に活動するための健康づくり」です。<br>
+              薬や外科に頼らず<span class="sp-block"></span>自然治癒力を最大限発揮できる<br>
+              心と身体づくりをサポートいたします。
             </p>
         </div>
-    </div>
-</div>
-
-<div class="home__area home__area--bg pc-none">
-    <div class="flex-container">
-        <h2 class="main__ttl">ABOUT<span>私たちについて</span></h2>
-
+    </div> 
+    <div class="flex-container">   
         <div class="col-sm-12 sp-lg-6">
-            <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/about01.jpg'; ?>" class="homeAbout__img" alt="img">
-        </div>
-        <div class="col-sm-12 sp-lg-6">
-            <h3 class="homeAbout__ttl">
-              アクティブエイジングとは<span class="block"></span>
-              「生涯元気に活動するための健康づくり」です。<span class="block"></span>
-              薬や外科に頼らず<span class="sp-block"></span>自然治癒力を最大限発揮できる<span class="block"></span>
-              心と身体づくりをサポートいたします。
-            </h3>
-        </div>
-        <div class="col-sm-12 sp-lg-6">
-            <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/about02.jpg'; ?>" class="homeAbout__img" alt="img">
+            <img src="<?php echo esc_url(home_url()).'/wp-content/uploads/about02.jpg'; ?>" class="homeAbout__img" alt="">
         </div>
         <div class="col-sm-12 sp-lg-6">
             <p class="homeAbout__txt">
-              カイロプラクティックは<span class="block"></span>
-              WHOが認める国際的なヘルスケアです。<span class="block"></span>
-              私たちは臨床歴15年、延べ5万人以上の<span class="sp-block"></span>施術を行ってきました。<span class="block"></span>
-              高い志を持ち、皆様の健康のために<span class="block"></span>
+              カイロプラクティックは<br>
+              WHOが認める国際的なヘルスケアです。<br>
+              私たちは臨床歴15年、延べ5万人以上の<span class="sp-block"></span>施術を行ってきました。<br>
+              高い志を持ち、皆様の健康のために<br>
               最善を尽くす事をお約束します。
             </p>
         </div>
@@ -143,25 +60,25 @@
         <div class="flex-fluid justify-center m-top10">
             <a class="w45" href="<?php echo site_url(); ?>/parts/">
                 <figure class="img__hover benefit__figure max100">
-                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/parts01.png" class="homeBenefit__img" alt="img">
+                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/parts01.png" class="homeBenefit__img" alt="">
                 </figure>
                 <p class="parts-text m-bottom0 bold">頭・首・肩</p>
             </a>
             <a class="w45" href="<?php echo site_url(); ?>/parts#back">
                 <figure class="img__hover benefit__figure max100">
-                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/parts03.png" class="homeBenefit__img" alt="img">
+                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/parts03.png" class="homeBenefit__img" alt="">
                 </figure>
                 <p class="parts-text m-bottom0 bold">背中・腰・骨盤</p>
             </a>
             <a class="w45" href="<?php echo site_url(); ?>/parts#arm max100">
                 <figure class="img__hover benefit__figure">
-                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/parts04.png" class="homeBenefit__img" alt="img">
+                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/parts04.png" class="homeBenefit__img" alt="">
                 </figure>
                 <p class="parts-text m-bottom0 bold">腕・肘・手</p>
             </a>
             <a class="w45" href="<?php echo site_url(); ?>/parts#crotch">
                 <figure class="img__hover benefit__figure max100">
-                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/parts05.png" class="homeBenefit__img" alt="img">
+                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/parts05.png" class="homeBenefit__img" alt="">
                 </figure>
                 <p class="parts-text m-bottom0 bold">股関節・膝・足</p>
             </a>
@@ -172,37 +89,37 @@
         <div class="flex-fluid justify-center m-top10">
             <a class="w45 m-bottom20_pc" href="<?php echo site_url(); ?>/herniated_disc/">
                 <figure class="img__hover benefit__figure2">
-                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/expert01.png" class="homeBenefit__img" alt="img">
+                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/expert01.png" class="homeBenefit__img" alt="">
                 </figure>
                 <p class="parts-text m-bottom0 bold">椎間板ヘルニア</p>
             </a>
             <a class="w45 m-bottom20_pc" href="<?php echo site_url(); ?>/spinal_canal_stenosis/">
                 <figure class="img__hover benefit__figure2">
-                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/expert02.png" class="homeBenefit__img" alt="img">
+                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/expert02.png" class="homeBenefit__img" alt="">
                 </figure>
                 <p class="parts-text m-bottom0 bold">脊柱管狭窄症</p>
             </a>
             <a class="w45 m-bottom20_pc" href="<?php echo site_url(); ?>/maternity_problems/">
                 <figure class="img__hover benefit__figure2">
-                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/expert03.png" class="homeBenefit__img" alt="img">
+                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/expert03.png" class="homeBenefit__img" alt="">
                 </figure>
                 <p class="parts-text m-bottom0 bold">産前産後のお悩み</p>
             </a>
             <a class="w45" href="https://aachiro.jp/deskworker_problems/">
                 <figure class="img__hover benefit__figure2">
-                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/expert04.png" class="homeBenefit__img" alt="img">
+                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/expert04.png" class="homeBenefit__img" alt="">
                 </figure>
                 <p class="parts-text m-bottom0 bold">デスクワーカーのお悩み</p>
             </a>
             <a class="w45" href="https://aachiro.jp/sports_injuries/">
                 <figure class="img__hover benefit__figure2">
-                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/expert05.png" class="homeBenefit__img" alt="img">
+                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/expert05.png" class="homeBenefit__img" alt="">
                 </figure>
                 <p class="parts-text m-bottom0 bold">スポーツ障害</p>
             </a>
             <a class="w45" href="https://aachiro.jp/osteoarthritis/">
                 <figure class="img__hover benefit__figure2">
-                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/expert06.png" class="homeBenefit__img" alt="img">
+                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/expert06.png" class="homeBenefit__img" alt="">
                 </figure>
                 <p class="parts-text m-bottom0 bold">変形性膝関節・股関節症</p>
             </a>
@@ -212,25 +129,25 @@
         <div class="flex-fluid justify-center m-top10">
             <a class="w45" href="<?php echo site_url(); ?>/straight_neck/">
                 <figure class="img__hover benefit__figure max100">
-                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/stneck_icon.png" class="homeBenefit__img" alt="img">
+                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/stneck_icon.png" class="homeBenefit__img" alt="">
                 </figure>
                 <p class="parts-text m-bottom0 bold">ストレートネック</p>
             </a>
             <a class="w45" href="<?php echo site_url(); ?>/round_back">
                 <figure class="img__hover benefit__figure max100">
-                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/nekoze_icon.png" class="homeBenefit__img" alt="img">
+                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/nekoze_icon.png" class="homeBenefit__img" alt="">
                 </figure>
                 <p class="parts-text m-bottom0 bold">猫背</p>
             </a>
             <a class="w45" href="<?php echo site_url(); ?>/scoliosis">
                 <figure class="img__hover benefit__figure">
-                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/sokuwan_icon.png" class="homeBenefit__img" alt="img">
+                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/sokuwan_icon.png" class="homeBenefit__img" alt="">
                 </figure>
                 <p class="parts-text m-bottom0 bold height-auto_sp">側わん症</p>
             </a>
             <a class="w45" href="<?php echo site_url(); ?>/straight_back">
                 <figure class="img__hover benefit__figure max100">
-                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/stback_icon.png" class="homeBenefit__img" alt="img">
+                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/stback_icon.png" class="homeBenefit__img" alt="">
                 </figure>
                 <p class="parts-text m-bottom0 bold height-auto_sp">ストレートバック</p>
             </a>
@@ -254,38 +171,29 @@
         <div class="top-cbp-flex block-im m-top10">
             <a href="<?php echo site_url(); ?>/chiropractic/">
                 <figure class="img__hover benefit__figure">
-                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/chiro_icon.png" class="homeBenefit__img" alt="img">
+                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/chiro_icon.png" class="homeBenefit__img" alt="">
                 </figure>
                 <p class="parts-text m-bottom0 sp-line">カイロプラクティック<br class="sp-block"></p>
             </a>
             <a href="<?php echo site_url(); ?>/cbp/">
                 <figure class="img__hover benefit__figure">
-                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/cbp_icon.png" class="homeBenefit__img" alt="img">
+                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/cbp_icon.png" class="homeBenefit__img" alt="">
                 </figure>
                 <p class="parts-text m-bottom0">CBP® 姿勢矯正</p>
             </a>
             <a href="<?php echo site_url(); ?>/myofascial_release/">
                 <figure class="img__hover benefit__figure">
-                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/kinmaku_icon.png" class="homeBenefit__img" alt="img">
+                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/kinmaku_icon.png" class="homeBenefit__img" alt="">
                 </figure>
                 <p class="parts-text m-bottom0">筋膜リリース</p>
             </a>
             <a href="https://aapilates.jp/">
                 <figure class="img__hover benefit__figure">
-                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/pilates_icon.png" class="homeBenefit__img" alt="img">
+                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/pilates_icon.png" class="homeBenefit__img" alt="">
                 </figure>
-                <p class="parts-text m-bottom0">ピラティス<span class="block"></span><span class="font-small">（専門サイトへ）</span></p>
+                <p class="parts-text m-bottom0">ピラティス<span class="font-small">（専門サイトへ）</span></p>
             </a>
         </div>
-
-        <!-- //// 筋膜リリース
-            <div class="col-sm-12 sp24-md-6 sp24-lg-3">
-                <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/service04.jpg'; ?>" class="homeStaff__img" alt="img">
-                <p class="homeStaff__name font-b">筋膜リリース</p>
-
-            </div>
-        ////  筋膜リリース  -->
-
     </div>
 </div>
 
@@ -303,19 +211,16 @@
         <div class="sp-none">
             <div class="flex-fluid justify-between">
                 <div class="col-sm-12 sp24-md-6 sp24-lg-3">
-                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/staff01.png" class="homeStaff__img" alt="img">
+                    <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/staff01.png" class="homeStaff__img" alt="">
                     <p class="homeStaff__name m-bottom0"><span class="kanji">井田 知孝</span><br>Tomotaka Ida</p>
-
                 </div>
                 <div class="col-sm-12 sp24-md-6 sp24-lg-3">
-                    <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/staff02.png'; ?>" class="homeStaff__img" alt="img">
+                    <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/staff02.png'; ?>" class="homeStaff__img" alt="">
                     <p class="homeStaff__name m-bottom0"><span class="kanji">和田 勝義</span><br>Katsuyoshi Wada</p>
-
                 </div>
                 <div class="col-sm-12 sp24-md-6 sp24-lg-3">
-                    <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/staff03.png'; ?>" class="homeStaff__img" alt="img">
+                    <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/staff03.png'; ?>" class="homeStaff__img" alt="">
                     <p class="homeStaff__name m-bottom0"><span class="kanji">坂西 龍之介</span><br>Ryunosuke Banzai</p>
-
                 </div>
             </div>
         </div>
@@ -325,19 +230,19 @@
                 <div class="swiper-wrapper sp-m-bottom">
                     <div class="swiper-slide">
                         <div class="col-sm-12 sp24-md-6 sp24-lg-3">
-                            <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/staff01.png" class="homeStaff__img" alt="img">
+                            <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/staff01.png" class="homeStaff__img" alt="">
                             <p class="homeStaff__name m-bottom0"><span class="kanji">井田 知孝</span><br>Tomotaka Ida</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="col-sm-12 sp24-md-6 sp24-lg-3">
-                            <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/staff02.png'; ?>" class="homeStaff__img" alt="img">
+                            <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/staff02.png'; ?>" class="homeStaff__img" alt="">
                             <p class="homeStaff__name m-bottom0"><span class="kanji">和田 勝義</span><br>Katsuyoshi Wada</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="col-sm-12 sp24-md-6 sp24-lg-3">
-                            <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/staff03.png'; ?>" class="homeStaff__img" alt="img">
+                            <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/staff03.png'; ?>" class="homeStaff__img" alt="">
                             <p class="homeStaff__name m-bottom0"><span class="kanji">坂西 龍之介</span><br>Ryunosuke Banzai</p>
                         </div>
                     </div>
@@ -355,38 +260,23 @@
 ****************************************************************************************************-->
 <div class="home__area home__area--bg">
     <h2 class="main__ttl">REVIEW<span>皆さまの声</span></h2>
-    <div class="sp-none">
-        <div class="review_img_pc">
-          <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/review_saitosan.png" class="col-sm-12" alt="お客さまの声：さいとうさん">
-        </div>
-    </div>
-    <div class="pc-none">
-        <div class="review_img padding-box">
-          <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/review_saitosan_sp.png" class="col-sm-12" alt="お客さまの声：さいとうさん">
-        </div>
-    </div>
-<!--
+    
     <div class="flex-container">
-        <h2 class="main__ttl">REVIEW<span>皆さまの声</span></h2>
         <div class="flex-fluid justify-center item-start">
-            <div class="col-sm-12 sp-md-3 pt-up">
+            <div class="col-sm-12 sp-md-3_new pt-up">
                 <div class="flex-fluid">
-                    <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/review01.png'; ?>" class="homeReview__img" alt="img">
+                    <img src="<?php echo esc_url(home_url()).'/wp-content/uploads/review_saito_new.png'; ?>" class="homeReview__img" alt="">
                     <div class="homeReview__NameArea">
                         <p class="homeReview__name">会社員 さいとうさん</p>
                         <p class="homeReview__sub pc-up">慢性的な肩こり・腰痛で来院</p>
                     </div>
                 </div>
             </div>
-            <div class="review_txt">
-                <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/review_saito.png" class="col-sm-12" alt="お客さまの声：さいとうさん">
-            </div>
--->
-            <!--
+            
             <div class="homeReview__txtArea">
                 <div class="homeReview__txtArea--inner arm">
-                    <img src="http://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron_r.png">
-                    <p class="homeReview__txt">
+                    <img src="http://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron_r.png" class="koron_l">
+                    <p class="homeReview__txt clear-b">
                         学生時代から机に向かってものを作ることが好きで<br>
                         慢性的な肩こり持ちでした。
                     </p>
@@ -399,41 +289,26 @@
                         姿勢と背骨についてこれからも引き続きメンテナンスを<br>
                         お願いしたいと考えています。
                     </p>
-                    <img src="http://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron.png">
+                    <img src="http://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron.png" class="koron_r">
                 </div>
             </div>
         </div>
-        -->
+        
 
-        <div class="sp-none">
-            <div class="review_img_pc review_p-top">
-              <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/review_makisan.png" class="col-sm-12" alt="お客さまの声：槇さん">
-            </div>
-        </div>
-        <div class="pc-none">
-            <div class="review_img padding-box">
-              <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/review_makisan_sp.png" class="col-sm-12" alt="お客さまの声：槇さん">
-            </div>
-        </div>
-<!--
         <div class="flex-fluid justify-center item-start">
-            <div class="col-sm-12 sp-md-3 pt-up">
+            <div class="col-sm-12 sp-md-3_new pt-up">
                 <div class="flex-fluid">
-                    <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/review02.png'; ?>" class="homeReview__img" alt="お客さまの声：槇さん">
+                    <img src="<?php echo esc_url(home_url()).'/wp-content/uploads/review_makisan_new.png'; ?>" class="homeReview__img" alt="お客さまの声：槇さん">
                     <div class="homeReview__NameArea">
                         <p class="homeReview__name">槇さんファミリー</p>
                         <p class="homeReview__sub pc-up">健康管理と産前産後ケア</p>
                     </div>
                 </div>
             </div>
-            <div class="review_txt">
-                <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/review_maki.png" class="col-sm-12" alt="img">
-            </div>
--->
-            <!--
+            
             <div class="homeReview__txtArea">
                 <div class="homeReview__txtArea--inner arm">
-                    <img src="http://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron_r.png">
+                    <img src="http://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron_r.png" class="koron_l">
                     <p class="homeReview__txt ">
                         先生とはかれこれ5年以上<br>
                         お付き合いをさせてもらってます。
@@ -449,10 +324,9 @@
                         先生のお陰で姿勢と背骨のメンテの大切さを教わりました。<br>
                         ありがとうございます！！
                     </p>
-                    <img src="http://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron.png">
+                    <img src="http://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron.png" class="koron_r">
                 </div>
             </div>
-            -->
         </div>
     </div>
 </div>
@@ -463,22 +337,59 @@
         <h2 class="sub-title_new center">医師の推薦</h2>
     </div>
 
-    <!--pc-staff-->
-    <div class="pc-none">
-    <div class="justify-center w-980 p-t3 padding-box">
-      <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/ishi_sp.png" alt="">
+    <div class="flex-fluid justify-center item-start doctor-box">
+        <div class="l-doctor">
+            <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/ishi_l.png" alt="" class="doctor-img">
+            <div class="l-doctor-name">
+                <p>竹谷内 克彰先生<br>(整形外科・医学博士)</p>
+            </div>
+            <img src="http://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron.png" class="koron_doctor">
+            <div class="l-doctor-txt">
+                <p class="homeReview__txt ">
+                    カイロプラクティックには、国際的には<br>
+                    世界保健機関(WHO)が認めるヘルスケアであり<br>
+                    一定の効果と安定性が証明されています。
+                </p>
+                <p class="homeReview__txt ">
+                    しかし、日本には法律がないため<br>
+                    誰でもカイロプラクティックの看板を掲げて<br>
+                    開業できてしまうという大きな問題があります。
+                </p>
+                <p class="homeReview__txt ">
+                    当方の先生方は、本場アメリカで<br>
+                    カイロプラクティックを修学した方々のため<br>
+                    医師の私も自信を持って推薦します。
+                </p>
+            </div>
+        </div>
+        <div class="v-border"></div>
+        <div class="r-doctor">
+            <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/ishi_r.png" alt="" class="doctor-img">
+            <div class="l-doctor-name">
+                <p>井田 和徳先生<br>(内科医・瑞宝中綬章受章医師)</p>
+            </div>
+            <img src="http://aachiro.jp/wp/wp-content/uploads/2018/12/review_koron.png" class="koron_doctor">
+            <div class="l-doctor-txt">
+                <p class="homeReview__txt ">
+                    一昨年前の冬に頸椎症を患い<br>
+                    慶應大学病院の先生に見ていただいたところ<br>
+                    これ以上悪化するなら手術しかないと言われました。
+                </p>
+                <p class="homeReview__txt ">
+                    一向に良くならず困っていたのですが<br>
+                    カイロプラクティックを受け始めて<br>
+                    3ヶ月後にはほとんどしびれがなくなり<br>
+                    今では会った支障はありません。
+                </p>
+                <p class="homeReview__txt ">
+                    カイロプラクティックという医療が広く普及し<br>
+                    多くの方に享受されることが<br>
+                    今後の日本の医療にとっても<br>
+                    多大な貢献となることを確信しております。
+                </p>
+            </div>
+        </div>        
     </div>
-    </div><!-- //pc-staff -->
-
-    <!--sp-staff-->
-    <div class="sp-none">
-    <div class="w-980">
-    <div class="justify-center w-980 p-t3 ishi-wrap">
-        <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/ishi.png" alt="">
-    </div>
-    </div>
-    </div><!-- //pc-staff -->
-
 </div>
 
 <!--****************************************************************************************************
@@ -581,17 +492,4 @@
         </a>
     </div>
 </div>
-
-<!--  ///--SNS--///
-<div class="white-back">
-    <aside class="sns-box_new">
-        <ul class="sns-box sp-flex">
-            <li><a href="https://www.facebook.com/activeageingpilates/" target="brank"><img src="https://aapilates.jp/wp/wp-content/uploads/2018/11/flogo_rgb_hex-brc-site-250.png" alt="facebookアイコン"></li></a>
-            <li><a href="https://www.instagram.com/activeageing_pilates/" target="brank"><img src="https://aapilates.jp/wp/wp-content/uploads/2018/11/app-icon2.png" alt="Instagramアイコン"></a></li>
-        </ul>
-    </aside>
-</div>
-///--SNS--///  -->
-
-
 <?php get_footer(); ?>
