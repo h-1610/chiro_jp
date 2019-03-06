@@ -23,15 +23,8 @@ get_header(); ?>
 <div class="home__area">
     <div class="flex-container">
         <h2 class="main__ttl">ABOUT<span>カイロプラクティックとは</span></h2>
-        <div class="sp-none">
-          <div class="c-img">
-              <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/chiro.jpg" class="col-sm-12" alt="">
-          </div>
-        </div>
-        <div class="pc-none">
-          <div class="w100">
-              <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/chiro_sp.jpg" class="col-sm-12" alt="">
-          </div>
+        <div class="c-img">
+          <img src="<?php echo site_url(); ?>/wp-content/themes/corporate-pro/original/img/chiro.jpg" class="col-sm-12" alt="">
         </div>
         <div class="about_logobox">
           <div class="w80"><p class="main__txt txt_l">カイロプラクティックは、<span class="bold">“背骨の機能障害を取りのぞくこと”</span> を目的として生まれました。</p>
