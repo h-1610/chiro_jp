@@ -230,19 +230,19 @@
                 <div class="swiper-wrapper sp-m-bottom">
                     <div class="swiper-slide">
                         <div class="col-sm-12 sp24-md-6 sp24-lg-3">
-                            <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/staff01.png" class="homeStaff__img" alt="img">
+                            <img src="https://aachiro.jp/wp/wp-content/themes/corporate-pro/original/img/staff01.png" class="homeStaff__img" alt="">
                             <p class="homeStaff__name m-bottom0"><span class="kanji">井田 知孝</span><br>Tomotaka Ida</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="col-sm-12 sp24-md-6 sp24-lg-3">
-                            <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/staff02.png'; ?>" class="homeStaff__img" alt="img">
+                            <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/staff02.png'; ?>" class="homeStaff__img" alt="">
                             <p class="homeStaff__name m-bottom0"><span class="kanji">和田 勝義</span><br>Katsuyoshi Wada</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="col-sm-12 sp24-md-6 sp24-lg-3">
-                            <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/staff03.png'; ?>" class="homeStaff__img" alt="img">
+                            <img src="<?php echo esc_url(home_url()).'/wp/wp-content/uploads/staff03.png'; ?>" class="homeStaff__img" alt="">
                             <p class="homeStaff__name m-bottom0"><span class="kanji">坂西 龍之介</span><br>Ryunosuke Banzai</p>
                         </div>
                     </div>
